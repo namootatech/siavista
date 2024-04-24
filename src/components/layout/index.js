@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
         <meta charset="UTF-8"/>
         <meta http-equiv="content-language" content="en"/>
         <meta property='og:url' content="https://siavista.netlify.app"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet"></link>
         {/* <link rel='icon' href='/favicon.ico' />
         <link rel='icon' href="/apple-touch-icon.png" sizes='any' />
         <link rel='icon' href="/favicon-32x32.png" sizes='any' />
@@ -45,7 +46,7 @@ const Layout = ({ children }) => {
       </Head>
       <NavigationBar />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
