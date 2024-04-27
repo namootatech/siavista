@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container'; // Correct import
+import Container from 'react-bootstrap/Container'; 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import DottedBox from '@/components/dotted-box';
+import OrangeBox from '@/components/orange-box'
 
 const Hero = () => {
     return (
@@ -10,7 +12,7 @@ const Hero = () => {
             <Row>
                 <Col lg={5}>
                     <div>
-                        <h1>Work with us</h1>
+                        <h3 className="text-orange text-uppercase">Work with us</h3>
                         <p>Elevate your project with our unmatched service!
                         At Siavista Electrical, we aspire to become a trusted and respected industry leader, fostering a positive culture and transparent communication. 
                         Our commitment lies in continuous innovation, technological advancement, and superior service delivery, aimed at delighting our customers. 
@@ -19,10 +21,23 @@ const Hero = () => {
                     </div>
                 </Col>
                 <Col lg={7}>
-                    <Image 
-                        src="/hero.png"
-                        fluid
-                    />
+                    <div id="hero-image-container">
+                        <div id="dotted-box">
+                            <DottedBox/>
+                        </div>
+                        <div id="hero-image">
+                            <Image 
+                                src="/hero.png"
+                                fluid
+                            />
+                        </div>
+                        <div id="orange-box">
+                            <OrangeBox/>
+                        </div>
+                        <div id="orange-box2">
+                            <OrangeBox/>
+                        </div>
+                    </div>
                 </Col>
             </Row>
         </Container>
