@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
       </Head>
       <NavigationBar />
       <main>{children}</main>
-      <Footer />
+      <Footer className="mt-5" />
     </div>
   );
 };

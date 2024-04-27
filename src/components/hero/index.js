@@ -11,7 +11,7 @@ const Hero = () => {
         <Container className="mt-5 mb-5"> 
             <Row>
                 <Col lg={5}>
-                    <div>
+                    <div className="mb-5">
                         <h3 className="text-orange text-uppercase">Work with us</h3>
                         <p>Elevate your project with our unmatched service!
                         At Siavista Electrical, we aspire to become a trusted and respected industry leader, fostering a positive culture and transparent communication. 
