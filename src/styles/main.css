@@ -33,7 +33,7 @@
     bottom: -5px;
     z-index: -3;
 }
-a:hover {
+.navigation-link:hover {
     background-color: #f9921d;
 }
 .orange-btn:hover {

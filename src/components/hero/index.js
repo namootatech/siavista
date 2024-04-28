@@ -21,7 +21,7 @@ const Hero = () => {
                         <ButtonLink 
                             className="orange-btn"
                             backgroundColor="#f9921d" 
-                            textColor="#000000"
+                            textColor="#ffffff"
                             text="explore more"
                             url="/services"
                         />
