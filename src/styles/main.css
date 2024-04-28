@@ -1,6 +1,9 @@
 .text-orange {
     color: #f9921d;
 }
+.text-grey {
+    color: #86827c;
+}
 #hero-image-container {
     position: absolute; 
 }
@@ -17,7 +20,6 @@
     margin-top: 5px;
     margin-left: 5px;
     z-index: 1;
-    border: 2px solid grey;
 }
 #orange-box {
     position: absolute;
@@ -33,4 +35,8 @@
 }
 a:hover {
     background-color: #f9921d;
+}
+.orange-btn:hover {
+    background-color: #86827c !important;
+    color: #000000 !important;
 }
