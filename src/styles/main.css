@@ -40,3 +40,7 @@
     background-color: #86827c !important;
     color: #000000 !important;
 }
+#about-description {
+    border-left: 5px solid #f9921d;
+    padding-left: 15px;
+}

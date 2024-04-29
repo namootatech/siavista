@@ -15,8 +15,7 @@ const Hero = () => {
                         <h4 className="text-orange text-uppercase mt-5">Work with us</h4>
                         <h3 className="text-grey">Power up with our unmatched service!</h3>
                         <p className="text-grey">
-                        At Siavista Electrical, our commitment lies in continuous innovation, technological advancement, and superior service delivery, aimed at delighting our customers. 
-                        Our success is driven by our focus on expedient service, building strong customer relationships, expertise in our field, and efficient supply chain management.
+                            The services rendered by Siavista can cover a project in its entirety from original concept to acceptance of completed installation work
                         </p>
                         <ButtonLink 
                             className="orange-btn"

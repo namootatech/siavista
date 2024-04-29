@@ -42,13 +42,6 @@ const DottedBox = () => {
                     <td style={tdStyle}>&bull;</td>
                     <td style={tdStyle}>&bull;</td>
                 </tr>
-                <tr>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                </tr>
             </table>
         </div>
     );
