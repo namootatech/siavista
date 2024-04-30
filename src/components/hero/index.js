@@ -9,7 +9,7 @@ import ButtonLink from '@/components/button';
 
 const Hero = () => {
     return (
-        <Container className="mt-5 mb-5"> 
+        <Container className="mt-5"> 
             <Row>
                 <Col lg={7} order={2} className="order-lg-1"> 
                     <div id="hero-image-container">
@@ -32,7 +32,7 @@ const Hero = () => {
                     </div>
                 </Col>
                 <Col lg={5} order={1} className="order-lg-2"> 
-                    <div className="mb-5">
+                    <div>
                         <h4 className="text-orange text-uppercase mt-5">Work with us</h4>
                         <h3 className="text-grey">Power up with our unmatched service!</h3>
                         <p className="text-grey">
