@@ -14,34 +14,36 @@ const DottedBox = () => {
     return (
         <div style={boxStyle}>
             <table>
-                <tr>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                </tr>
-                <tr>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                </tr>
-                <tr>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                </tr>
-                <tr>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                    <td style={tdStyle}>&bull;</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                    </tr>
+                    <tr>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                    </tr>
+                    <tr>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                    </tr>
+                    <tr>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                        <td style={tdStyle}>&bull;</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     );
