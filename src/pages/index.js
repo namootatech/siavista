@@ -4,6 +4,7 @@ import Layout from '@/components/layout';
 const inter = Inter({ subsets: ['latin'] });
 import Hero from '@/components/hero';
 import About from '@/components/about';
+import { Container } from 'react-bootstrap';
 export default function Home() {
   return (
     <Layout>

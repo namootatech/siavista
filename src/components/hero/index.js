@@ -10,10 +10,10 @@ const Hero = () => {
     return (
         <Container className="mt-5 mb-5"> 
             <Row>
-                <Col lg={5} lgOrder={2}>
+                <Col lg={5}>
                     <div className="mb-5">
                         <h4 className="text-orange text-uppercase mt-5">Work with us</h4>
-                        <h3 className="text-grey">Power up with our unmatched service!</h3>
+                        <h3 className="text-grey">Power up with our electrical services!</h3>
                         <p className="text-grey">
                             The services rendered by Siavista can cover a project in its entirety from original concept to acceptance of completed installation work
                         </p>
@@ -26,7 +26,7 @@ const Hero = () => {
                         />
                     </div>
                 </Col>
-                <Col lg={7} lgOrder={1}>
+                <Col lg={7}>
                     <div id="hero-image-container">
                         <div id="dotted-box">
                             <DottedBox/>
@@ -34,6 +34,7 @@ const Hero = () => {
                         <div id="hero-image">
                             <Image 
                                 src="/hero.png"
+                                alt="Hero Image"
                                 fluid
                             />
                         </div>
