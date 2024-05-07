@@ -1,37 +1,71 @@
+import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 // style={{ position: "fixed", bottom: 0, width: "100%" }}
 const Footer = () => {
   return (
-    <footer className="bg-light py-5 mt-5">
+    <footer className='bg-light py-5 mt-5'>
       <Container>
-        <Row className="align-items-center">
-          <Col md={6} className="text-center text-md-start mb-4 mb-md-0">
-            <p className="mb-0">Copyright © 2024 Siavista Electrical - All Rights Reserved.</p>
+        <Row className='align-items-center'>
+          <Col md={6} className='text-center text-md-start mb-4 mb-md-0'>
+            <p className='mb-0'>
+              Copyright © 2024 Siavista Electrical - All Rights Reserved.
+            </p>
           </Col>
-          <Col md={6} className="text-center text-md-end">
-            <p className="mb-0">Developed by <strong className="text-orange">Namoota</strong></p>
+
+          <Col md={6} className='text-center text-md-end'>
+            <p className='mb-0'>
+              Developed by <strong className='text-orange'>Namoota</strong>
+            </p>
+          </Col>
+          <Col md={6} className='text-center text-md-start mb-4 mb-md-0'>
+            <Link
+              href='/leave-a-comment'
+              className='text-grey text-decoration-none'
+            >
+              <p className='text-orange'>Leave us a comment</p>
+            </Link>
           </Col>
         </Row>
-        <Row className="justify-content-center mt-4">
-          <Col className="text-center">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-grey me-3">
-              <i className="bi bi-facebook fs-4"></i>
+        <Row className='justify-content-center mt-4'>
+          <Col className='text-center'>
+            <a
+              href='https://www.facebook.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-grey me-3'
+            >
+              <i className='bi bi-facebook fs-4'></i>
             </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" className="text-grey me-3">
-              <i className="bi bi-twitter fs-4"></i>
+            <a
+              href='https://www.twitter.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-grey me-3'
+            >
+              <i className='bi bi-twitter fs-4'></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-grey me-3">
-              <i className="bi bi-instagram fs-4"></i>
+            <a
+              href='https://www.instagram.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-grey me-3'
+            >
+              <i className='bi bi-instagram fs-4'></i>
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-grey">
-              <i className="bi bi-linkedin fs-4"></i>
+            <a
+              href='https://www.linkedin.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-grey'
+            >
+              <i className='bi bi-linkedin fs-4'></i>
             </a>
           </Col>
         </Row>
       </Container>
     </footer>
   );
-}
+};
 
 export default Footer;
