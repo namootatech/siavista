@@ -8,7 +8,7 @@ function ResponsiveSlider({ children, items }) {
     centerMode: true,
     infinite: true,
     speed: 1000,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
