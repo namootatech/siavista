@@ -9,12 +9,13 @@ import Link from 'next/link';
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchTestimonials = async () => {
       const response = await fetch('/api/testimonials/get-all');
       const data = await response.json();
       setTestimonials(data.testimonials);
+      setLoading(false);
     };
 
     fetchTestimonials();
@@ -89,9 +90,18 @@ const Testimonials = () => {
               .
             </p>
             <div className='row my-5'>
-              <ResponsiveSlider items={testimonials}>
-                {testimonialItems}
-              </ResponsiveSlider>
+              {loading && (
+                <div>
+                  <div class='spinner-border fs-1 text-warning' role='status'>
+                    <span class='sr-only'></span>
+                  </div>
+                </div>
+              )}
+              {!loading && (
+                <ResponsiveSlider items={testimonials}>
+                  {testimonialItems}
+                </ResponsiveSlider>
+              )}
             </div>
             <div className='text-left my-5'>
               <p className='h4 fs-3 text-muted'>The Value of Client Feedback</p>
