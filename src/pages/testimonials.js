@@ -34,8 +34,11 @@ const Testimonials = () => {
       <div class='card-body d-flex justify-content-center align-items-center'>
         <div className='row'>
           <div className='col-md-4'>
-            <img
+            <Image
               className='img-fluid rounded-start'
+              width={600}
+              height={600}
+              placeholder='blur'
               src={testimonial.image || '/aboutBanner.png'} // Replace with default image path
               alt={testimonial.name + ' ' + testimonial.surname}
             />
