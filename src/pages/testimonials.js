@@ -7,6 +7,8 @@ import Layout from '@/components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
 
+const blurDataUrl =
+  'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Crect width="8" height="8" fill="%23ccc" /%3E%3Crect x="0" y="0" width="4" height="4" fill="%23fff" /%3E%3Crect x="4" y="4" width="4" height="4" fill="%23fff" /%3E%3C/svg%3E';
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -39,6 +41,7 @@ const Testimonials = () => {
               width={600}
               height={600}
               placeholder='blur'
+              blurDataURL={blurDataUrl}
               src={testimonial.image || '/aboutBanner.png'} // Replace with default image path
               alt={testimonial.name + ' ' + testimonial.surname}
             />
