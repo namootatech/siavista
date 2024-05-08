@@ -8,7 +8,7 @@ function ResponsiveSlider({ children, items }) {
     centerMode: true,
     infinite: true,
     speed: 1000,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -26,11 +26,12 @@ function ResponsiveSlider({ children, items }) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          centerMode: false,
         },
       },
       {
@@ -38,6 +39,7 @@ function ResponsiveSlider({ children, items }) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],

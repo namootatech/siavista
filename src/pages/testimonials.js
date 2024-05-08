@@ -74,8 +74,8 @@ const Testimonials = () => {
 
         <main className='container'>
           <div className='container mt-5'>
-            <h2 className='fs-2 text-muted'>What Our Clients Say</h2>
-            <p className='lead text-muted fs-4'>
+            <h2 className='fs-3 text-muted'>What Our Clients Say</h2>
+            <p className='lead text-muted fs-5'>
               We're constantly striving to improve and deliver the best possible
               service to our clients. See what satisfied customers have to say
               about their experiences. If you've used our services and would
@@ -95,7 +95,7 @@ const Testimonials = () => {
             </div>
             <div className='text-left my-5'>
               <p className='h4 fs-3 text-muted'>The Value of Client Feedback</p>
-              <p className='text-muted lead fs-4'>
+              <p className='text-muted lead fs-5'>
                 Your feedback is invaluable to us. It helps us understand what
                 we're doing well and where we can improve. Positive testimonials
                 not only boost our morale, but also reassure potential clients
