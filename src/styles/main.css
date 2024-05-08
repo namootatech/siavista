@@ -88,6 +88,7 @@
   position: relative;
   scale: 1.1 !important;
   z-index: 10;
+  transition: all 0.3s ease-in-out;
   @media (max-width: 769px) {
     scale: 0 !important;
     .testimonial {
@@ -98,6 +99,7 @@
 .slick-slide {
   filter: blur(1px) grayscale(1);
   scale: 0.8;
+  transition: all 0.3s ease-in-out;
   @media (max-width: 769px) {
     filter: blur(0px) !important;
   }
