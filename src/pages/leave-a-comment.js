@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout
+      seo={{
+        title: 'Testimonials',
+        description:
+          'Share your experience with Siavista Electrical by writing a testimonial. Your feedback helps us understand your satisfaction with our high-quality electrical services, access control solutions, home automation, and security systems. Join others in contributing to our mission of excellence.',
+      }}
+    >
       <div>
-        <Head>
-          <title>Siavista Electrical | Testimonials</title>
-          <meta name='description' content='Siavista Electrical Testimonials' />
-          <link rel='icon' href='/favicon.ico' />
-        </Head>
-
         <main className='container'>
           <div className='row'>
             <div className='col-md-10 offset-md-1'>
