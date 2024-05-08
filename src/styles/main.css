@@ -58,12 +58,23 @@
   }
 }
 
+.service-card {
+  height: 400px;
+}
+#services {
+  @media only screen and (min-width: 769px) {
+    position: relative;
+    top: -250px;
+  }
+}
+
+
 .testimonial-header-image {
   width: 100%;
 }
 
 .testimonial-form-par {
-  background: #f09427;
+  background: var(--orange-color);
 }
 
 /* .slick-slide {
@@ -109,7 +120,7 @@
   min-width: 400px;
   z-index: 100;
   .card-header {
-    background-color: #e7912e !important;
+    background-color: var(--orange-color) !important;
     color: #fff;
   }
 }

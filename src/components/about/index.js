@@ -26,7 +26,7 @@ const About = () => {
                 <Col md={5}>
                     <div>
                         <Image
-                            src="/aboutBanner.png"
+                            src="/service1.jpg"
                             fluid
                         />
                     </div>
