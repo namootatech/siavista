@@ -51,6 +51,12 @@
   border-left: 5px solid var(--orange-color);
   padding-left: 15px;
 }
+#about-image {
+  @media only screen and (min-width: 769px) {
+    position: relative;
+    top: -190px;
+  }
+}
 
 @media only screen and (max-width: 769px) {
   #hero-image-container {
@@ -59,15 +65,17 @@
 }
 
 .service-card {
-  height: 400px;
+  @media only screen and (min-width: 769px) {
+    height: 450px;
+  } 
 }
+
 #services {
   @media only screen and (min-width: 769px) {
     position: relative;
-    top: -250px;
-  }
+    top: -190px;
+  } 
 }
-
 
 .testimonial-header-image {
   width: 100%;

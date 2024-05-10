@@ -11,23 +11,26 @@ const About = () => {
             <Row>
                 <Col md={2}>
                     <div>
-                        <h4 className="text-uppercase text-orange">About us</h4>
+                        <h4 className="text-uppercase text-orange mt-2">About us</h4>
+                        <hr className="text-grey"/>
+                        <Image className="mb-5" src="/logo.png" fluid/>
                     </div>
                 </Col>
                 <Col md={5}>
                     <div id="about-description">
                         <h3 className="text-grey">World-class Electrical Services</h3>
-                        <p className="text-grey">
+                        <p className="text-grey text-justify">
                         At Siavista Electrical, our commitment lies in continuous innovation, technological advancement, and superior service delivery, aimed at delighting our customers. 
                         Our success is driven by our focus on expedient service, building strong customer relationships, expertise in our field, and efficient supply chain management.
                         </p>
                     </div>
                 </Col>
                 <Col md={5}>
-                    <div>
+                    <div id="about-image">
                         <Image
                             src="/service1.jpg"
                             fluid
+                            className="rounded mt-3"
                         />
                     </div>
                 </Col>

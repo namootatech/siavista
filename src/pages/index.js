@@ -25,6 +25,21 @@ export default function Home() {
       imageUrl: 'electrician.jpg',
       title: 'Design Service',
       description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
+    },
+    {
+      imageUrl: 'service1.jpg',
+      title: 'Access Control',
+      description: 'We provide a variety of services for selective control surveillance, and access to locations or offices. '
+    },
+    {
+      imageUrl: 'service1.jpg',
+      title: 'Home Automation',
+      description: 'Comprehensive automation solutions, such as curtain and lighting control, scene creation, and control through remote devices or touchscreen, whether you\'re nearby or far away.'
+    },
+    {
+      imageUrl: 'service1.png',
+      title: 'Load-shedding Solution',
+      description: 'Green energy, Inverter installations as a backup system or with Solar panels Wind turbines Installations Generator Installations'
     }
   ];
 
@@ -36,7 +51,10 @@ export default function Home() {
         </div>
         <About className="mt-5"/>
         <div id="services">
-          <Services services={servicesData}/>
+          <Container>
+            <h3 className="text-orange text-uppercase mb-3">What We Can Do for you!</h3>
+          </Container>
+          <Services services={servicesData} columnSize={4}/>
         </div>
       </main>
     </Layout>
