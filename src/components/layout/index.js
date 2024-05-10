@@ -46,8 +46,8 @@ const Layout = ({ children, seo }) => {
           }
         />
         <meta name='robots' content='follow' />
-        <meta charset='UTF-8' />
-        <meta http-equiv='content-language' content='en' />
+        <meta charSet='UTF-8' />
+        <meta httpEquiv='content-language' content='en' />
         <meta property='og:url' content={process.env.NEXT_PUBLIC_SITE_URL} />
         <link
           href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css'
