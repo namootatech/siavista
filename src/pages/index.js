@@ -27,17 +27,17 @@ export default function Home() {
       description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
     },
     {
-      imageUrl: 'service1.jpg',
+      imageUrl: 'electrician.jpg',
       title: 'Access Control',
       description: 'We provide a variety of services for selective control surveillance, and access to locations or offices. '
     },
     {
-      imageUrl: 'service1.jpg',
+      imageUrl: 'electrician.jpg',
       title: 'Home Automation',
       description: 'Comprehensive automation solutions, such as curtain and lighting control, scene creation, and control through remote devices or touchscreen, whether you\'re nearby or far away.'
     },
     {
-      imageUrl: 'service1.png',
+      imageUrl: 'electrician.jpg',
       title: 'Load-shedding Solution',
       description: 'Green energy, Inverter installations as a backup system or with Solar panels Wind turbines Installations Generator Installations'
     }
