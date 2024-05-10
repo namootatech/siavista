@@ -46,10 +46,8 @@ export default function Home() {
   return (
     <Layout>
       <main>
-        <Hero className="mb-5"/>
-        <div className="mt-5">
-        </div>
-        <About className="mt-5"/>
+        <Hero/>
+        <About/>
         <div id="services">
           <Container>
             <h3 className="text-orange text-uppercase mb-3">What We Can Do for you!</h3>

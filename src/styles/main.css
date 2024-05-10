@@ -54,7 +54,7 @@
 #about-image {
   @media only screen and (min-width: 769px) {
     position: relative;
-    top: -190px;
+    top: -220px;
   }
 }
 
@@ -70,11 +70,11 @@
   } 
 }
 
-#services {
+/* #services {
   @media only screen and (min-width: 769px) {
     position: relative;
   } 
-}
+} */
 
 .testimonial-header-image {
   width: 100%;
