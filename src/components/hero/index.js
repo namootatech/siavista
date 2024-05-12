@@ -37,14 +37,14 @@ const Hero = () => {
                         <h4 className="text-orange text-uppercase mt-4">Work with us</h4>
                         <h4 className="text-grey mt-4">Power up with our unmatched service!</h4>
                         <p className="text-grey mt-3">
-                            The services rendered by Siavista can cover a project in its entirety from original concept to acceptance of completed installation work
+                            The electrical services rendered by Siavista can cover a project in its entirety from original concept to acceptance of completed installation work. Click the button below to explore what we can do for you.
                         </p>
                         <ButtonLink
                             className="orange-btn mt-3"
                             backgroundColor="#f9921d"
                             textColor="#ffffff"
-                            text="explore more"
-                            url="/services"
+                            text="explore services"
+                            url="#services"
                         />
                     </div>
                 </Col>
