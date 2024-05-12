@@ -52,15 +52,18 @@
   padding-left: 15px;
 }
 #about-image {
-  @media only screen and (min-width: 769px) {
-    position: relative;
-    top: -220px;
+  @media only screen and (max-width: 769px) {
+    img {
+      max-height: 300px;
+    }
   }
 }
-
+#about-logo {
+  max-height: 100px;
+}
 @media only screen and (max-width: 769px) {
   #hero-image-container {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 
@@ -70,11 +73,6 @@
   } 
 }
 
-/* #services {
-  @media only screen and (min-width: 769px) {
-    position: relative;
-  } 
-} */
 
 .testimonial-header-image {
   width: 100%;

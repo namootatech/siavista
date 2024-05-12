@@ -22,14 +22,14 @@ export default function Home() {
       description: 'We are accredited for electric fence installations. We have a certificate of compliance'
     },
     {
-      imageUrl: 'service2.png',
-      title: 'Field Service',
-      description: 'Emergency services during non-standard hours, troubleshooting, on-site inspections, commissioning, investigations, and proactive maintenance.'
-    },
-    {
       imageUrl: 'service5.jpg',
       title: 'Access Control',
       description: 'We provide a variety of services for selective control surveillance, and access to locations or offices. '
+    },
+    {
+      imageUrl: 'service2.png',
+      title: 'Field Service',
+      description: 'Emergency services during non-standard hours, troubleshooting, on-site inspections, commissioning, investigations, and proactive maintenance.'
     },
     {
       imageUrl: 'service6.jpg',
@@ -50,7 +50,7 @@ export default function Home() {
         <About/>
         <div id="services">
           <Container>
-            <h3 className="text-orange text-uppercase mb-3">What We Can Do for you!</h3>
+            <h3 className="text-orange text-uppercase mb-3">What We do!</h3>
           </Container>
           <Services services={servicesData} columnSize={4}/>
         </div>

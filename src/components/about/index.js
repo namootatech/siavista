@@ -7,13 +7,13 @@ import ButtonLink from '@/components/button';
 
 const About = () => {
     return (
-        <Container className="mt-5 mb-5"> 
+        <Container className="mt-5"> 
             <Row>
-                <Col md={2}>
+                <Col md={4}>
                     <div>
-                        <h4 className="text-uppercase text-orange mt-2">About us</h4>
+                        <h4 className="text-uppercase text-orange">About us</h4>
                         <hr className="text-grey"/>
-                        <Image className="mb-5" src="/logo.png" fluid/>
+                        <Image id="about-logo" className="mb-5" src="/logo.png"fluid/>
                     </div>
                 </Col>
                 <Col md={5}>
@@ -25,10 +25,10 @@ const About = () => {
                         </p>
                     </div>
                 </Col>
-                <Col md={5}>
+                <Col md={3}>
                     <div id="about-image">
                         <Image
-                            src="/service1.jpg"
+                            src="/service2.png"
                             fluid
                             className="rounded mt-3"
                         />

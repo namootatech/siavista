@@ -62,7 +62,7 @@ const Layout = ({ children, seo }) => {
       </Head>
       <NavigationBar />
       <main>{children}</main>
-      <Footer className='mt-5' />
+      <Footer />
     </div>
   );
 };
