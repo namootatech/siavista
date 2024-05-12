@@ -67,12 +67,12 @@
   }
 }
 
-.service-card {
+
+.service-card-description {
   @media only screen and (min-width: 769px) {
-    height: 450px;
+    height: 120px
   } 
 }
-
 
 .testimonial-header-image {
   width: 100%;
