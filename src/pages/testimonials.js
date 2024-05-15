@@ -22,7 +22,7 @@ const Testimonials = () => {
     fetchTestimonials();
   }, []);
 
-  console.log(testimonials);
+  //console.log(testimonials);
 
   const testimonialItems = testimonials?.map((testimonial) => (
     <div class='card my-4 testimonial border border-0 shadow-sm'>

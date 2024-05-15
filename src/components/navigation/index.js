@@ -31,7 +31,7 @@ const NavigationBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className='navigation-link' eventKey={2} href='#'>
+            <Nav.Link className='navigation-link' eventKey={2} href='/contact'>
               Contact
             </Nav.Link>
           </Nav>

@@ -59,11 +59,11 @@ const TestimonialForm = () => {
       setShowAlert(false);
     }
 
-    console.log(testimonialData);
+    //console.log(testimonialData);
     axios
       .post('/api/testimonials/add', testimonialData)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         setShowThankYou(true);
         setTimeout(() => {
           window.location.reload();
