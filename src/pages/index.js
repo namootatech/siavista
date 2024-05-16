@@ -7,52 +7,53 @@ import Hero from '@/components/hero';
 import About from '@/components/about';
 import Services from '@/components/services';
 
-
 export default function Home() {
-
   const servicesData = [
     {
       imageUrl: 'service3.png',
-      title: 'Design Service',
-      description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
+      title: 'Design & Planning',
+      description:
+        'We work hand-in-hand with architects to create beautiful and functional lighting plans for new builds and renovations. Our electrical sketches ensure everything is strategically placed for optimal functionality and aesthetics.',
     },
     {
       imageUrl: 'electrician.jpg',
-      title: 'Electric fence installation',
-      description: 'We are accredited for electric fence installations. We have a certificate of compliance'
+      title: 'Certified Electric Fence Installation',
+      description:
+        'Keep your property safe with our accredited electric fence installations. We prioritize safety and adhere to all compliance regulations, providing a certificate upon completion for your peace of mind.',
     },
     {
       imageUrl: 'service5.jpg',
-      title: 'Access Control',
-      description: 'We provide a variety of services for selective control surveillance, and access to locations or offices. '
+      title: 'Advanced Access Control Systems',
+      description:
+        'We offer a variety of access control solutions to manage entry and surveillance for locations of all sizes, from offices to apartment buildings. Our systems provide selective control, allowing you to grant access to specific areas for authorized personnel.',
     },
     {
       imageUrl: 'service2.png',
-      title: 'Field Service',
-      description: 'Emergency services during non-standard hours, troubleshooting, on-site inspections, commissioning, investigations, and proactive maintenance.'
+      title: '24/7 Emergency Response',
+      description:
+        "We understand that electrical emergencies can happen anytime. That's why we offer 24/7 emergency services to get your power back on as quickly and safely as possible.",
     },
     {
       imageUrl: 'service6.jpg',
-      title: 'Home Automation',
-      description: 'Comprehensive automation solutions, such as curtain and lighting control, scene creation, and control through remote devices or touchscreen, whether you\'re nearby or far away.'
+      title: 'Seamless Home Automation',
+      description:
+        'Experience the convenience of home automation with Siavista Electrical. Control everything from your curtains and lighting to creating customized scenes, all from the comfort of your couch or even remotely through your smartphone or touchscreen.',
     },
     {
       imageUrl: 'service0.png',
-      title: 'Load-shedding Solution',
-      description: 'Green energy, Inverter installations as a backup system or with Solar panels Wind turbines Installations Generator Installations'
-    }
+      title: 'Load Shedding Solutions',
+      description:
+        'Say goodbye to the limitations of load shedding. We offer a variety of green energy solutions, including inverter installations for backup power or integration with solar panels, wind turbines, and generators. Let us help you design a system that keeps your home or business powered up during outages.',
+    },
   ];
 
   return (
     <Layout>
       <main>
-        <Hero/>
-        <About/>
-        <div id="services">
-          <Container>
-            <h3 className="text-orange text-uppercase mb-3">What We do!</h3>
-          </Container>
-          <Services services={servicesData} columnSize={4}/>
+        <Hero />
+        <About />
+        <div id='services'>
+          <Services services={servicesData} columnSize={4} />
         </div>
       </main>
     </Layout>

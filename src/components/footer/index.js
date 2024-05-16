@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // style={{ position: "fixed", bottom: 0, width: "100%" }}
 const Footer = () => {
   return (
-    <footer className='bg-light py-5 mt-5'>
+    <footer className='bg-light py-5'>
       <Container>
         <Row className='align-items-center'>
           <Col md={6} className='text-center text-md-start mb-4 mb-md-0'>

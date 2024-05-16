@@ -31,8 +31,12 @@ const NavigationBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className='navigation-link' eventKey={2} href='/contact'>
-              Contact
+            <Nav.Link
+              className='navigation-link bg-dark-grey text-white p-2 shadow shadow-sm'
+              eventKey={2}
+              href='/contact'
+            >
+              Get Started
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
