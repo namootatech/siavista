@@ -15,7 +15,6 @@ export default function PartnerStrip() {
   };
   return (
     <div className='row partner-strip '>
-      <ProgressBar now={100} stripped animated variant={'dark'} />
       <div className='col-md-12 "slider-container"'>
         <Slider {...settings} className='row'>
           <div

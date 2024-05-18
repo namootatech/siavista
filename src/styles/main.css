@@ -390,6 +390,7 @@ body {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid #2d261d;
 
     img {
       width: 50%;
@@ -430,10 +431,28 @@ body {
   min-height: 90vh;
 }
 .simple-hero-img {
-  filter: saturate(0) contrast(1.5) brightness(0.5) sepia(1);
+  filter: saturate(0.6) contrast(1.5) brightness(0.5);
   min-height: 90vh;
   background-size: cover !important;
 }
 .simple-hero-text {
   min-height: 90vh;
+}
+
+.banner {
+  background: #2d261d;
+  color: #fff;
+  padding: 10px;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  small:hover {
+    color: var(--orange-color);
+  }
+}
+
+.navbar {
+  margin-top: 2.5rem;
 }
