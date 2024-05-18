@@ -61,7 +61,7 @@ const Layout = ({ children, seo }) => {
         <link rel='icon' href={`/android-chrome-192x192.png`} sizes='any' />
       </Head>
       <NavigationBar />
-      <main>{children}</main>
+      <main className='layout-children-container'>{children}</main>
       <Footer />
     </div>
   );

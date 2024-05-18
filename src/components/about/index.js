@@ -15,8 +15,8 @@ const About = () => {
         <Col md={2}></Col>
         <Col md={5}>
           <div id='about-description'>
-            <h3 className='text-grey'>World-class Electrical Services</h3>
-            <p className='text-grey text-justify'>
+            <h3 className='text-dark-grey'>World-class Electrical Services</h3>
+            <p className='text-dark-grey text-justify'>
               At Siavista Electrical, our commitment lies in continuous
               innovation, technological advancement, and superior service
               delivery, aimed at delighting our customers. Our success is driven
