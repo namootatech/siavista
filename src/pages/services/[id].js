@@ -11,12 +11,33 @@ import {
   PiNumberCircleTwoFill,
   PiNumberCircleThreeFill,
 } from 'react-icons/pi';
+import ServiceCarousel from '@/components/about-carousel';
 
 const numbers = [
   PiNumberCircleOneFill,
   PiNumberCircleTwoFill,
   PiNumberCircleThreeFill,
 ];
+
+const servicesData = [
+  {
+    imageUrl: '/about-carousel1.png',
+    title: 'Design Service',
+  },
+  {
+    imageUrl: '/about-carousel2.png',
+    title: 'Electric fence installation',
+  },
+  {
+    imageUrl: '/about-carousel1.png',
+    title: 'Design Service',
+  },
+  {
+    imageUrl: '/about-carousel2.png',
+    title: 'Electric fence installation',
+  },
+];
+
 export const getStaticProps = async ({ params }) => {
   const { id } = params;
   return {
@@ -44,6 +65,7 @@ const LightingPage = ({ page }) => {
       <Row className='d-flex justify-content-center align-items-center m-0 p-0 min-vw-100'>
         <Col className='text-left m-0 p-0' md={12} sm={12} xs={12}>
           <SimpleHero {...page.hero} />
+
           <div className='bg-dark-grey text-white'>
             <Row className='p-4 d-flex justify-content-center align-items-center '>
               <Col md={10} className='p-4'>
@@ -74,6 +96,7 @@ const LightingPage = ({ page }) => {
                 </Row>
               </Col>
             </Row>
+            <ServiceCarousel services={servicesData} className='mt-5' />
             <Row className='p-4 d-flex justify-content-center align-items-center bg-oldlace text-dark-grey-500'>
               <Col md={10} className='p-4'>
                 <h4 className='fs-2 my-4'>{page?.sellingPoints?.title}</h4>
@@ -105,6 +128,7 @@ const LightingPage = ({ page }) => {
           </div>
         </Col>
       </Row>
+
       <Row className='d-flex justify-content-center align-items-center m-0 p-0 min-vw-100'>
         <Col className='text-left m-0 p-0' md={12} sm={12} xs={12}>
           <div className='text-center p-4 d-flex justify-content-center flex-column align-items-center'>

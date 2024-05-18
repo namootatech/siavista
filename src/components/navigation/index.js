@@ -58,30 +58,46 @@ const NavigationBar = () => {
   return (
     <div className='super-nav'>
       {/* create a banner componenet that will be fixed above the nbav to show messages*/}
-      <div className='bg-dark-grey text-white text-center p-2 banner'>
+      <div className='bg-orange text-white text-center p-2 banner'>
         <Row>
-          <Col lg={6} className='text-left'></Col>
+          <Col
+            lg={6}
+            className='text-left d-flex flex-lg-row flex-column justify-content-start align-items-start'
+          >
+            <Link
+              href='/compliance'
+              className='text-white-trans text-decoration-none fw-light mx-3'
+            >
+              <small>Compliance</small>
+            </Link>
+            <Link
+              href='/careers'
+              className='text-white-trans text-decoration-none fw-light mx-3'
+            >
+              <small>Careers</small>
+            </Link>
+          </Col>
           <Col
             lg={6}
             className='text-right d-flex flex-lg-row flex-column justify-content-end align-items-end'
           >
             <a
               href='tel:+27782468156'
-              className='text-white text-decoration-none fw-light mx-3'
+              className='text-white-trans text-decoration-none fw-light mx-3'
             >
               <i className='fas fa-phone-alt'></i>{' '}
               <small>+27 78 246 8156</small>
             </a>
             <a
               href='mailto:info@siavistaelectrical.co.za'
-              className='text-white text-decoration-none fw-light mx-3'
+              className='text-white-trans text-decoration-none fw-light mx-3'
             >
               <i className='fas fa-envelope'></i>
               <small>info@siavistaelectrical.co.za</small>
             </a>
             <Link
               href='/request-support'
-              className='text-white text-decoration-none fw-light mx-3'
+              className='text-white-trans text-decoration-none fw-light mx-3'
             >
               <small>Request support</small>
             </Link>

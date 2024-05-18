@@ -160,15 +160,15 @@ body {
 }
 
 .bg-dark-grey-500 {
-  background-color: #2d261d;
+  background-color: #252321;
 }
 
 .text-dark-grey-500 {
-  color: #2d261d;
+  color: #252321;
 }
 
 .border-dark-grey-500 {
-  border-color: #2d261d;
+  border-color: #252321;
 }
 
 #about-description {
@@ -408,7 +408,7 @@ body {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #2d261d;
+    border-top: 2px solid #252321;
 
     img {
       width: 50%;
@@ -426,7 +426,7 @@ body {
   }
 }
 .our-partners-text {
-  background: #2d261d;
+  background: #252321;
   padding: 10px;
   color: #fff;
   font-weight: 600;
@@ -439,7 +439,7 @@ body {
 .modal-body {
   background: #fff;
   color: #333;
-  box-shadow: inset 1px 1px 13px 2px #2d261d59;
+  box-shadow: inset 1px 1px 13px 2px #25232159;
 }
 
 .bg-oldlace {
@@ -458,12 +458,16 @@ body {
 }
 
 .banner {
-  background: #2d261d;
+  background: #252321;
   color: #fff;
   padding: 10px;
   small:hover {
     color: var(--orange-color);
   }
+}
+
+.breadcrumb {
+  background: #363532;
 }
 
 .super-nav {
@@ -510,4 +514,8 @@ body {
 
 #main-container {
   overflow-x: hidden;
+}
+
+.text-white-trans {
+  color: #bfbbb778 !important;
 }
