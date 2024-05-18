@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       const result = await collection.insertOne(data);
       //console.log(
         `${result.insertedCount} documents were inserted with the _id: ${result.insertedId}`
-      );
+      // );
       res
         .status(200)
         .json({ message: 'Testimonial added successfully', data: result });
