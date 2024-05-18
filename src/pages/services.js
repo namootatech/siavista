@@ -1,63 +1,69 @@
-import moment from 'moment';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
 
 import Layout from '@/components/layout';
-import Head from 'next/head';
-import Link from 'next/link';
-import Services from '@/components/services';
+
 import { Container } from 'react-bootstrap';
+import Hero from '@/components/hero';
+import About from '@/components/about';
+import Services from '@/components/services';
+import SellingPoints from '@/components/selling-points';
+import PartnerStrip from '@/components/partner-strip';
 
-
-const AboutUs = () => {
+export default function Home() {
   const servicesData = [
     {
-      imageUrl: 'service3.png',
-      title: 'Design Service',
-      description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
-    },
-    {
-      imageUrl: 'electrician.jpg',
-      title: 'Electric fence installation',
-      description: 'We are accredited for electric fence installations. We have a certificate of compliance'
-    },
-    {
-      imageUrl: 'service5.jpg',
-      title: 'Access Control',
-      description: 'We provide a variety of services for selective control surveillance, and access to locations or offices. '
-    },
-    {
+      id: 'emergencies',
       imageUrl: 'service2.png',
-      title: 'Field Service',
-      description: 'Emergency services during non-standard hours, troubleshooting, on-site inspections, commissioning, investigations, and proactive maintenance.'
+      title: '24/7 Emergency Response',
+      description:
+        "We understand that electrical emergencies can happen anytime. That's why we offer 24/7 emergency services to get your power back on as quickly and safely as possible.",
+    },
+
+    {
+      id: 'electrical-fencing',
+      imageUrl: 'electrician.jpg',
+      title: 'Certified Electric Fence Installation',
+      description:
+        'Keep your property safe with our accredited electric fence installations. We prioritize safety and adhere to all compliance regulations, providing a certificate upon completion for your peace of mind.',
     },
     {
-      imageUrl: 'service6.jpg',
-      title: 'Home Automation',
-      description: 'Comprehensive automation solutions, such as curtain and lighting control, scene creation, and control through remote devices or touchscreen, whether you\'re nearby or far away.'
+      id: 'security',
+      imageUrl: 'service5.jpg',
+      title: 'Advanced Access Control Systems',
+      description:
+        'We offer a variety of access control solutions to manage entry and surveillance for locations of all sizes, from offices to apartment buildings. Our systems provide selective control, allowing you to grant access to specific areas for authorized personnel.',
     },
+
     {
+      id: 'load-shedding',
       imageUrl: 'service0.png',
-      title: 'Load-shedding Solution',
-      description: 'Green energy, Inverter installations as a backup system or with Solar panels Wind turbines Installations Generator Installations'
-    }
+      title: 'Load Shedding Solutions',
+      description:
+        'Say goodbye to the limitations of load shedding. We offer a variety of green energy solutions, including inverter installations for backup power or integration with solar panels, wind turbines, and generators.',
+    },
+    {
+      id: 'automations',
+      imageUrl: 'service6.jpg',
+      title: 'Seamless Home Automation',
+      description:
+        'Experience the convenience of home automation with Siavista Electrical. Control everything from your curtains and lighting to creating customized scenes, all from the comfort of your couch or even remotely through your smartphone or touchscreen.',
+    },
+
+    {
+      id: 'lighting',
+      imageUrl: 'service3.png',
+      title: 'Design & Planning',
+      description:
+        'We work hand-in-hand with architects to create beautiful and functional lighting plans for new builds and renovations. Our electrical sketches ensure everything is strategically placed for optimal functionality and aesthetics.',
+    },
   ];
 
   return (
-    <Layout
-      seo={{
-        title: 'Services',
-        description:
-          'Siavista Electrical Services, showcasing our commitment to providing high-quality electrical services, access control solutions, home automation, and security systems. Discover how our expertise and dedication have earned us trust across various industries.',
-      }}
-    >
-      <div>
-        <main className='container'>
-          <Services services={servicesData} columnSize={4}/>
-        </main>
-      </div>
+    <Layout>
+      <main className='overflow-hidden home-main'>
+        <About />
+        <Services services={servicesData} columnSize={4} />
+      </main>
     </Layout>
   );
-};
-
-export default AboutUs;
+}

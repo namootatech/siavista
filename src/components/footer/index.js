@@ -9,37 +9,39 @@ const Footer = () => {
   return (
     <footer className='bg-light'>
       <PartnerStrip />
-      <section class='section project-in-mind m-0 bg-dark-grey '>
-        <div class='container bg-dark-grey text-white p-4'>
-          <div className='row gx-x'>
-            <div className='col-md-6 col-sm-12 p-4'>
-              <h2 class='display-1 fw-bold p-4'>
-                Have a project on your mind?
-              </h2>
-            </div>
-            <div className='col-md-6 col-sm-12 p-4'>
-              <h3 class='h4 my-4'>Contact Info</h3>
-              <p class='my-4'>
-                Address:{' '}
-                <span class='text-grey'>
-                  Crystal Grove, Amber Road, Burgundy Estate, Cape Town
-                </span>
-                <br />
-                Email:{' '}
-                <span class='text-grey'>info@siavistaelectrical.com</span>
-                <br />
-                Cell: <span class='text-grey'>+27 78 246 8156</span>
-              </p>
-              <Link href='/contact' class='cta-button w-inline-block my-4'>
-                <div class='cta-button-text fs-2 fw-bold text-dark-grey'>
-                  Let’s get it done!
-                </div>
-                <Arrow class='cta-button-arrow' />
-              </Link>
+      <Container className='bg-dark-grey '>
+        <div class='section project-in-mind bg-dark-grey '>
+          <div class='bg-dark-grey text-white p-4'>
+            <div className='row gx-x'>
+              <div className='col-md-6 col-sm-12 p-4'>
+                <h2 class='display-1 fw-bold p-lg-4'>
+                  Have a project on your mind?
+                </h2>
+              </div>
+              <div className='col-md-6 col-sm-12 p-4'>
+                <h3 class='h4 my-4'>Contact Info</h3>
+                <p class='my-4'>
+                  Address:{' '}
+                  <span class='text-grey'>
+                    Crystal Grove, Amber Road, Burgundy Estate, Cape Town
+                  </span>
+                  <br />
+                  Email:{' '}
+                  <span class='text-grey'>info@siavistaelectrical.com</span>
+                  <br />
+                  Cell: <span class='text-grey'>+27 78 246 8156</span>
+                </p>
+                <Link href='/contact' class='cta-button w-inline-block my-4'>
+                  <div class='cta-button-text fs-2 fw-bold text-dark-grey'>
+                    Let’s get it done!
+                  </div>
+                  <Arrow class='cta-button-arrow' />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </Container>
       <br />
       <Container className='p-4'>
         <Row className='align-items-center'>

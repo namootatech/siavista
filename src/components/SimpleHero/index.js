@@ -11,7 +11,7 @@ const Hero = ({ image, title, subtitle, description, noButton }) => {
   return (
     <div className='mt-1 bg-light shadow shadow-sm simple-hero'>
       <Row
-        className=''
+        className='m-0'
         style={{
           background: `url(${image}) no-repeat center center`,
           backgroundSize: 'cover',

@@ -10,13 +10,14 @@ import OrangeBox from '@/components/orange-box';
 
 const About = () => {
   return (
-    <Container className='mt-5 mb-5'>
-      <Row>
-        <Col md={2}></Col>
-        <Col md={5}>
-          <div id='about-description'>
-            <h3 className='text-dark-grey'>World-class Electrical Services</h3>
-            <p className='text-dark-grey text-justify'>
+    <div className='bg-dark-grey-500 about-container'>
+      <Row className='mt-4 h-100'>
+        <Col md={6} sm={8} xs={12} className='mt-5 mb-5 py-4 h-100'>
+          <div className='d-flex flex-column h-100 justify-content-center align-items-center  p-4  '>
+            <h3 className='fw-bold text-orange funky-text display-6 shadow display-4 shadow-sm my-4'>
+              World-class Electrical Services
+            </h3>
+            <p className='text-light text-center  fs-4'>
               At Siavista Electrical, our commitment lies in continuous
               innovation, technological advancement, and superior service
               delivery, aimed at delighting our customers. Our success is driven
@@ -26,14 +27,18 @@ const About = () => {
             </p>
           </div>
         </Col>
-        <Col md={5}>
-          <Image src='/service2.png' fluid className='' />
-          <div id='dotted-box2'>
-            <DottedBox grid={[2, 2]} />
-          </div>
+        <Col md={6} sm={4} xs={12} className=' h-100  fade-image-container'>
+          <div
+            class='fade-image h-100'
+            style={{
+              background: "url('/service2.png') no-repeat center center",
+              backgroundSize: 'cover',
+              filter: 'brightness(1) contrast(1) grayscale(.5)',
+            }}
+          ></div>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 export default About;

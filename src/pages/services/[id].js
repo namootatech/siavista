@@ -47,7 +47,7 @@ const LightingPage = ({ page }) => {
           <div className='bg-dark-grey text-white'>
             <Row className='p-4 d-flex justify-content-center align-items-center '>
               <Col md={10} className='p-4'>
-                <h4 className='fs-1 text-orange m-4 funky-text'>
+                <h4 className='fs-1 text-orange m-md-4 funky-text'>
                   {page?.title}
                 </h4>
                 <Row className='p-4'>

@@ -9,9 +9,9 @@ import ButtonLink from '@/components/button';
 
 const Hero = ({ image, title, subtitle, description, noButton }) => {
   return (
-    <Container className='mt-5 py-4'>
+    <Container className='hero-comp'>
       <Row className=' mb-5 py-4'>
-        <Col md={7} order={2} className='order-md-1 py-4'>
+        <Col lg={7} md={12} order={2} className='order-md-1 py-4'>
           <div id='hero-image-container'>
             <div id='dotted-box'>
               <DottedBox />
@@ -27,7 +27,7 @@ const Hero = ({ image, title, subtitle, description, noButton }) => {
             </div>
           </div>
         </Col>
-        <Col md={5} order={1} className='order-md-2'>
+        <Col lg={5} md={12} order={1} className='order-md-2'>
           <div>
             <h4 className='text-dark-grey text-uppercase mt-4 fs-1 fw-bold'>
               {title}

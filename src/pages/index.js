@@ -61,35 +61,38 @@ export default function Home() {
   return (
     <Layout>
       <main className='overflow-hidden home-main'>
-        <Hero
-          title='Work with us'
-          image='/electrician.jpg'
-          subtitle={'Power up with our unmatched service!'}
-          description={
-            <>
-              <p className='my-4'>
-                At Siavista Electrical, we believe in providing a seamless and
-                comprehensive electrical service experience. We go beyond just
-                fixing light fixtures or installing outlets. We partner with you
-                to ensure your electrical project is a success, from the initial
-                concept all the way to final handover and acceptance.
-              </p>
-              <p>
-                Our certified and experienced electricians will meticulously
-                install all electrical components, adhering to the highest
-                safety standards and industry best practices. Click the button
-                below to find out more.
-              </p>
-            </>
-          }
-          noButton
-        />
+        <Container>
+          <div className='m-md-5'>
+            <Hero
+              title='Work with us'
+              image='/electrician.jpg'
+              subtitle={'Power up with our unmatched service!'}
+              description={
+                <>
+                  <p className='my-4'>
+                    At Siavista Electrical, we believe in providing a seamless
+                    and comprehensive electrical service experience. We go
+                    beyond just fixing light fixtures or installing outlets. We
+                    partner with you to ensure your electrical project is a
+                    success, from the initial concept all the way to final
+                    handover and acceptance.
+                  </p>
+                  <p>
+                    Our certified and experienced electricians will meticulously
+                    install all electrical components, adhering to the highest
+                    safety standards and industry best practices. Click the
+                    button below to find out more.
+                  </p>
+                </>
+              }
+              noButton
+            />
+          </div>
+        </Container>
         {/* <About /> */}
 
         <SellingPoints />
-        <div id='services' className='p-5'>
-          <Services services={servicesData} columnSize={4} />
-        </div>
+        <Services services={servicesData} columnSize={4} />
       </main>
     </Layout>
   );

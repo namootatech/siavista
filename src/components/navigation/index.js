@@ -11,6 +11,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 import { Col, ProgressBar, Row } from 'react-bootstrap';
+import NextBreadcrumb from '../breadcrumb';
 
 const kebabCaseToSentenceCase = (kebabCase) => {
   return kebabCase
@@ -55,14 +56,14 @@ const NavigationBar = () => {
   };
 
   return (
-    <div>
+    <div className='super-nav'>
       {/* create a banner componenet that will be fixed above the nbav to show messages*/}
       <div className='bg-dark-grey text-white text-center p-2 banner'>
         <Row>
-          <Col md={6} className='text-left'></Col>
+          <Col lg={6} className='text-left'></Col>
           <Col
-            md={6}
-            className='text-right d-flex flex-row justify-content-end align-items-end'
+            lg={6}
+            className='text-right d-flex flex-lg-row flex-column justify-content-end align-items-end'
           >
             <a
               href='tel:+27782468156'
@@ -89,9 +90,8 @@ const NavigationBar = () => {
       </div>
       <Navbar
         collapseOnSelect
-        expand='md'
+        expand='lg'
         className='bg-dark-grey shadow shadow-lg '
-        fixed='top'
       >
         <Modal
           show={show}
@@ -204,7 +204,7 @@ const NavigationBar = () => {
             </button>
           </Modal.Footer>
         </Modal>
-        <Container>
+        <Container fluid>
           <Navbar.Brand href='/'>
             {/* siavista Electrical */}
             <Image src='/newlogo202.png' fluid />
@@ -277,6 +277,7 @@ const NavigationBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <NextBreadcrumb />
     </div>
   );
 };
