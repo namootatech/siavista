@@ -15,22 +15,18 @@ const AboutUs = () => {
         {
           imageUrl: 'about-carousel1.png',
           title: 'Design Service',
-          description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
         },
         {
           imageUrl: 'about-carousel2.png',
           title: 'Electric fence installation',
-          description: 'We are accredited for electric fence installations. We have a certificate of compliance'
         },
         {
           imageUrl: 'about-carousel1.png',
           title: 'Design Service',
-          description: 'lighting design with architects we do appropriate electrical sketches for new buildings or those under renovation'
         },
         {
           imageUrl: 'about-carousel2.png',
           title: 'Electric fence installation',
-          description: 'We are accredited for electric fence installations. We have a certificate of compliance'
         },
     ];
 
@@ -50,7 +46,7 @@ const AboutUs = () => {
                 <h1 className="text-capitalize">Power Up with Our Unmatched Electrical Services!</h1>
               </div> */}
               <div id="history-section">
-                <h2 className="text-orange mt-3 mb2">Our Organization, History, &amp; Background</h2>
+                <h2 className="text-orange mt-3 mb2">Our Organization History &amp; Background</h2>
                 <p className="text-grey">
                   Our vast &amp; extensive history has aided us to observe a mundane and stagnant routine of operation within our industry whilst partnered with other employers and companies, which was largely echoed by all our organization&apos;s stakeholders which have impacted our organization&apos;s growth and development through a journey of years, whilst flexibly handling different roles within our home away from home - Siavista. 
                 </p>
