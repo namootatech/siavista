@@ -83,36 +83,40 @@ const TestimonialForm = () => {
   return (
     <Form
       onSubmit={handleSubmit}
-      className='bg-secondary bg-gradient text-light  shadow-lg text-muted fs-6'
+      className='bg-oldface text-dark-grey-500   fs-6'
     >
-      <p className=' py-6 px-4 text-center fw-bold pt-4 pb-4 text-light testimonial-form-par '>
-        Let us know how we did and how we can continue to improve!
+      <p className=' py-6 px-4 text-center pt-4 pb-4 fs-2 text-orange funky-text fw-bold '>
+        Let us know how we did
+        <br />
+        and how we can continue to improve!
       </p>
       <div className='py-6 px-4 '>
         <div className='row '>
           <div className='col-md-6'>
             <Form.Group controlId='name'>
-              <Form.Label className='text-light'>Name</Form.Label>
+              <Form.Label className='text-dark-grey-500'>Name</Form.Label>
               <Form.Control
                 type='text'
                 name='name'
                 value={testimonialData.name}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='First Name'
               />
             </Form.Group>
           </div>
           <div className='col-md-6'>
             <Form.Group controlId='surname'>
-              <Form.Label className='text-light'>Surname</Form.Label>
+              <Form.Label className='text-dark-grey-500'>Surname</Form.Label>
               <Form.Control
                 type='text'
                 name='surname'
                 value={testimonialData.surname}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='Last Name'
               />
             </Form.Group>
           </div>
@@ -120,27 +124,29 @@ const TestimonialForm = () => {
         <div className='row pt-2'>
           <div className='col-md-6'>
             <Form.Group controlId='name'>
-              <Form.Label className='text-light'>Role</Form.Label>
+              <Form.Label className='text-dark-grey-500'>Role</Form.Label>
               <Form.Control
                 type='text'
                 name='role'
                 value={testimonialData.role}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='e.g. CEO, Manager, etc.'
               />
             </Form.Group>
           </div>
           <div className='col-md-6'>
             <Form.Group controlId='surname'>
-              <Form.Label className='text-light'>Company</Form.Label>
+              <Form.Label className='text-dark-grey-500'>Company</Form.Label>
               <Form.Control
                 type='text'
                 name='company'
                 value={testimonialData.company}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='Company Name'
               />
             </Form.Group>
           </div>
@@ -149,42 +155,46 @@ const TestimonialForm = () => {
         <div className='row'>
           <div className='col-md-6'>
             <Form.Group controlId='cellphone' className='my-2'>
-              <Form.Label className='text-light'>Cellphone Number</Form.Label>
+              <Form.Label className='text-dark-grey-500'>
+                Cellphone Number
+              </Form.Label>
               <Form.Control
                 type='tel'
                 name='cellphone'
                 value={testimonialData.cellphone}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='e.g. 0821234567'
               />
             </Form.Group>
           </div>
           <div className='col-md-6'>
             <Form.Group controlId='email' className='my-2'>
-              <Form.Label className='text-light'>Email</Form.Label>
+              <Form.Label className='text-dark-grey-500'>Email</Form.Label>
               <Form.Control
                 type='email'
                 name='email'
                 value={testimonialData.email}
                 onChange={handleChange}
                 required
-                className='text-muted'
+                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                placeholder='e.g. email@example.com'
               />
             </Form.Group>
           </div>
         </div>
 
         <Form.Group controlId='comment' className='my-2'>
-          <Form.Label className='text-light'>Comment</Form.Label>
+          <Form.Label className='text-dark-grey-500'>Comment</Form.Label>
           <Form.Control
             as='textarea'
-            rows={3}
+            rows={6}
             name='comment'
             value={testimonialData.comment}
             onChange={handleChange}
             required
-            className='text-muted'
+            className='text-grey border-0 shadow-sm rounded-0 fw-light'
           />
         </Form.Group>
         <ImageUploader setTestimonialData={setTestimonialData} />
@@ -204,7 +214,7 @@ const TestimonialForm = () => {
             <Button
               variant='dark'
               type='submit'
-              className='my-4 text-light '
+              className='btn text-dark-grey-500  bg-orange rounded-0  border-0 text-white px-4 py-2 me-2 bg-hover-dark-grey'
               disabled={isLoading || showThankYou}
             >
               Submit
@@ -213,7 +223,7 @@ const TestimonialForm = () => {
           <div className='col-md-6 my-4 d-flex flex-row justify-content-end'>
             {isLoading && (
               <button
-                class='btn text-light border border-secondary '
+                class='btn text-dark-grey-500  bg-orange rounded-0 px-4 py-2 me-2 bg-hover-dark-grey'
                 type='button'
                 disabled
               >

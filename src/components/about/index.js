@@ -11,7 +11,7 @@ import OrangeBox from '@/components/orange-box';
 const About = () => {
   return (
     <div className='bg-dark-grey-500 about-container'>
-      <Row className='mt-4 h-100'>
+      <Row className='mt-lg-0 mt-md-4 h-100'>
         <Col md={6} sm={8} xs={12} className='mt-5 mb-5 py-4 h-100'>
           <div className='d-flex flex-column h-100 justify-content-center align-items-center  p-4  '>
             <h3 className='fw-bold text-orange funky-text display-6 shadow display-4 shadow-sm my-4'>

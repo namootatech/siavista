@@ -13,34 +13,34 @@ export default function Home() {
       }}
     >
       <div>
-        <main className='container'>
+        <main className='container bg-oldlace'>
           <div className='row'>
             <div className='col-md-10 offset-md-1'>
               <div className='row '>
-                <div className='col-md-6 py-4 '>
+                <div className='col-md-6 m-0 p-4 '>
                   <img
                     src='/electrician.jpg'
                     alt='Siavista Electrical Testimonials'
                     className='testimonial-header-image'
                   />
-                  <h1 className='text-left gray-500 text-muted pt-4 fs-4 gray-500'>
+                  <h1 className='text-left pt-4 fs-2 funky-text text-orange fw-bold'>
                     We Value Your Feedback!
                   </h1>
-                  <h3 className='text-left py2 fs-5 text-secondary'>
+                  <h3 className='text-left py2 fs-3 text-dark-grey-500 '>
                     Leave us a comment
                   </h3>
-                  <p className='text-left py-1 fs-6 gray-500 text-muted text-secondary'>
+                  <p className='text-left py-1 fs-5 text-dark-grey-500  lead'>
                     Thank you for choosing Siavista Electrical! We are committed
                     to exceeding your expectations through continuous innovation
                     and superior service.
                   </p>
-                  <p className='text-left text-muted text-secondary'>
+                  <p className='text-left fs-5 text-dark-grey-500  lead'>
                     Your experience is important to us. We would be grateful if
                     you could take a few moments to share your feedback by
                     filling out this form.
                   </p>
                 </div>
-                <div className='col-md-6 py-4 testimonial-form-container'>
+                <div className='col-md-6 m-0 p-0 testimonial-form-container bg-oldlace'>
                   <TestimonialForm />
                 </div>
               </div>

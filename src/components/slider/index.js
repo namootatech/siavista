@@ -1,6 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 
+function SampleArrow(props) {
+  const { className, style, onClick } = props;
+  return <></>;
+}
+
 function ResponsiveSlider({ children, items }) {
   var settings = {
     dots: true,
@@ -8,12 +13,14 @@ function ResponsiveSlider({ children, items }) {
     centerMode: true,
     infinite: true,
     speed: 1000,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     adaptiveHeight: true,
+    nextArrow: <SampleArrow />,
+    prevArrow: <SampleArrow />,
 
     responsive: [
       {

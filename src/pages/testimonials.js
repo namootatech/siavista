@@ -7,6 +7,7 @@ import Layout from '@/components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
 import blurDataUrl from '@/lib/blur-data-url';
+import { Col, Row } from 'react-bootstrap';
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -80,45 +81,61 @@ const Testimonials = () => {
       <div>
         <main className='container'>
           <div className='container mt-5'>
-            <h2 className='fs-3 text-muted'>What Our Clients Say</h2>
-            <p className='lead text-muted fs-5'>
-              We're constantly striving to improve and deliver the best possible
-              service to our clients. See what satisfied customers have to say
-              about their experiences. If you've used our services and would
-              like to share your feedback, we'd love to hear from you!{' '}
-              <Link
-                href='/leave-a-comment'
-                className='text-orange text-decoration-none'
-              >
-                Leave a comment
-              </Link>
-              .
-            </p>
-            <div className='row my-5'>
-              {loading && (
-                <div>
-                  <div class='spinner-border fs-1 text-warning' role='status'>
-                    <span class='sr-only'></span>
-                  </div>
+            <Row className='d-flex flex-row justify-content-center align-items-center'>
+              <Col lg={8} md={12} className='mt-2 py-4'>
+                <h2 className='text-orange my-4 funky-text display-3 fw-bold'>
+                  What Our Clients Say
+                </h2>
+                <p className='lead text-grey fs-3'>
+                  We're constantly striving to improve and deliver the best
+                  possible service to our clients. See what satisfied customers
+                  have to say about their experiences. If you've used our
+                  services and would like to share your feedback, we'd love to
+                  hear from you!{' '}
+                  <Link
+                    href='/leave-a-comment'
+                    className='text-orange text-decoration-none'
+                  >
+                    Leave a comment
+                  </Link>
+                  .
+                </p>
+              </Col>
+              <Col lg={12} md={12} className=''>
+                <div className='row my-5'>
+                  {loading && (
+                    <div>
+                      <div
+                        class='spinner-border fs-1 text-warning'
+                        role='status'
+                      >
+                        <span class='sr-only'></span>
+                      </div>
+                    </div>
+                  )}
+                  {!loading && (
+                    <ResponsiveSlider items={testimonials}>
+                      {testimonialItems}
+                    </ResponsiveSlider>
+                  )}
                 </div>
-              )}
-              {!loading && (
-                <ResponsiveSlider items={testimonials}>
-                  {testimonialItems}
-                </ResponsiveSlider>
-              )}
-            </div>
-            <div className='text-left my-5'>
-              <p className='h4 fs-3 text-muted'>The Value of Client Feedback</p>
-              <p className='text-muted lead fs-5'>
-                Your feedback is invaluable to us. It helps us understand what
-                we're doing well and where we can improve. Positive testimonials
-                not only boost our morale, but also reassure potential clients
-                about the quality of our services. We encourage you to share
-                your honest experience with us, whether it's positive or
-                negative.
-              </p>
-            </div>
+              </Col>
+              <Col lg={8} md={12} className='mt-2 mb-5 py-4'>
+                <div className='text-left my-5'>
+                  <p className='display-3 funky-text text-orange fw-bold'>
+                    The Value of Client Feedback
+                  </p>
+                  <p className='text-grey lead fs-3'>
+                    Your feedback is invaluable to us. It helps us understand
+                    what we're doing well and where we can improve. Positive
+                    testimonials not only boost our morale, but also reassure
+                    potential clients about the quality of our services. We
+                    encourage you to share your honest experience with us,
+                    whether it's positive or negative.
+                  </p>
+                </div>
+              </Col>
+            </Row>
           </div>
         </main>
       </div>

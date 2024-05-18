@@ -241,7 +241,11 @@ body {
 /* .slick-list {
   margin: 0 -27px;
 } */
-.testimonials-container {
+.slider-container {
+  .slick-list{
+    overflow: hidden;
+        padding: 10px 60px !important;
+  }
   .slick-arrow {
     text-shadow: 0px 0px 1px #00000052;
     scale: 4;
@@ -266,7 +270,7 @@ body {
   }
   .slick-slide {
     filter: blur(1px) grayscale(1);
-    scale: 0.8;
+    scale: 0.7;
     transition: all 0.3s ease-in-out;
     @media (max-width: 769px) {
       filter: blur(0px) !important;
@@ -543,14 +547,14 @@ body {
   right: 0;
   background: linear-gradient(
     to left,
-    rgba(45, 38, 29, 0.5) 0%,
-    rgba(45, 38, 29, 1.5) 100%
-  );
+    rgba(45, 38, 29, 0) 0%,
+    rgb(37 35 33) 100%);
   pointer-events: none; /* Allows click events to pass through */
 }
 
 #main-container {
   overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .text-white-trans {
@@ -561,18 +565,26 @@ nav .dropdown-menu{
       border-radius: 0;
     background: orange;
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 nav .dropdown-menu .dropdown-item{
-    color: #fff;
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
 }
 nav .dropdown-menu .dropdown-item:hover{
-    color: #000;
+    color: #000 !important
 }
 nav .dropdown-menu .dropdown-item:active{
-  color: #252321
+  background-color: #252321 !important
 }
 
 nav .dropdown-menu .dropdown-item:active a{
-  color: #fff
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .dropdown-menu .dropdown-item a{
+
+  transition: all 0.3s ease-in-out;
 }

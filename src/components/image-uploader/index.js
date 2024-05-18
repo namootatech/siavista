@@ -33,12 +33,12 @@ const ImageUploader = ({ setTestimonialData }) => {
 
   return (
     <Form.Group controlId='image' className='py-2'>
-      <Form.Label className='text-light'>Upload Image</Form.Label>
+      <Form.Label className='text-dark-grey-500 fs-5'>Upload Image</Form.Label>
       <Form.Control
         type='file'
         onChange={handleFileChange}
         accept='image/*'
-        className='text-muted'
+        className='text-muted border-0 shadow-sm rounded-0'
       />
       {isLoading && (
         <button
