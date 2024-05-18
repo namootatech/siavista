@@ -3,10 +3,29 @@
   --grey-color: #86827c;
   --merriweather-font: '__Merriweather_f68def', '__Merriweather_Fallback_f68def';
   --poppins-font: '__Poppins_7df6af', '__Poppins_Fallback_7df6af';
-  --bs-breadcrumb-divider-color: #fff !important;
+  --bs-breadcrumb-divider-color:  #bfbbb778  !important;
 }
 .breadcrumb {
-  --bs-breadcrumb-divider-color: #fff !important;
+  --bs-breadcrumb-divider-color:color: #bfbbb778  !important;
+}
+.breadcrumb-item a{
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-item a:hover{
+  font-size: 13px;
+  color: #f9921d !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-item:before{
+  font-size: 12px;
+}
+
+.breadcrumb-item {
+      display: flex;
+    color: #f9921d;
 }
 body {
   font-family: var(--poppins-font);
@@ -394,7 +413,10 @@ body {
 .navbar-brand {
   filter: saturate(2) drop-shadow(2px 4px 6px black);
 }
-
+.navbar {
+  border: 4px solid #363532;
+  transition: all 0.3s ease-in-out;
+}
 .layout-children-container {
   margin-top: 10em;
 }
@@ -452,6 +474,16 @@ body {
   filter: saturate(0.6) contrast(1.5) brightness(0.5);
   min-height: 90vh;
   background-size: cover !important;
+  position: relative;
+}
+.simple-hero-img:after {
+  background: #ff880078;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
 }
 .simple-hero-text {
   min-height: 90vh;
@@ -460,9 +492,14 @@ body {
 .banner {
   background: #252321;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
+  small{
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+  }
   small:hover {
     color: var(--orange-color);
+    font-size: 13px;
   }
 }
 
@@ -518,4 +555,24 @@ body {
 
 .text-white-trans {
   color: #bfbbb778 !important;
+}
+
+nav .dropdown-menu{
+      border-radius: 0;
+    background: orange;
+    color: #fff;
+}
+
+nav .dropdown-menu .dropdown-item{
+    color: #fff;
+}
+nav .dropdown-menu .dropdown-item:hover{
+    color: #000;
+}
+nav .dropdown-menu .dropdown-item:active{
+  color: #252321
+}
+
+nav .dropdown-menu .dropdown-item:active a{
+  color: #fff
 }

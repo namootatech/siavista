@@ -58,7 +58,7 @@ const NavigationBar = () => {
   return (
     <div className='super-nav'>
       {/* create a banner componenet that will be fixed above the nbav to show messages*/}
-      <div className='bg-orange text-white text-center p-2 banner'>
+      <div className='bg-orange text-white text-center p-1 banner'>
         <Row>
           <Col
             lg={6}
@@ -104,11 +104,7 @@ const NavigationBar = () => {
           </Col>
         </Row>
       </div>
-      <Navbar
-        collapseOnSelect
-        expand='lg'
-        className='bg-dark-grey shadow shadow-lg '
-      >
+      <Navbar collapseOnSelect expand='lg' className='bg-dark-grey '>
         <Modal
           show={show}
           onHide={justClose}

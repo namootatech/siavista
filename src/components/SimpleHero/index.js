@@ -10,13 +10,7 @@ import ButtonLink from '@/components/button';
 const Hero = ({ image, title, subtitle, description, noButton }) => {
   return (
     <div className='mt-1 bg-light shadow shadow-sm simple-hero'>
-      <Row
-        className='m-0'
-        style={{
-          background: `url(${image}) no-repeat center center`,
-          backgroundSize: 'cover',
-        }}
-      >
+      <Row className='m-0'>
         <Col
           md={6}
           order={2}

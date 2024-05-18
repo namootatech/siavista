@@ -44,10 +44,10 @@ const AboutUs = () => {
             <Row className='d-flex flex-row justify-content-center align-items-center'>
               <Col lg={8} md={12} className='mt-2 mb-5 py-4'>
                 <div id='history-section'>
-                  <h2 className='text-orange mt-3 mb2'>
+                  <h2 className='text-orange mt-3 mb-4 display-4 fw-bold funky-text'>
                     Our Organization History &amp; Background
                   </h2>
-                  <p className='text-grey'>
+                  <p className='text-grey fs-3 my-4 lead'>
                     Our vast &amp; extensive history has aided us to observe a
                     mundane and stagnant routine of operation within our
                     industry whilst partnered with other employers and
@@ -57,7 +57,7 @@ const AboutUs = () => {
                     of years, whilst flexibly handling different roles within
                     our home away from home - Siavista.
                   </p>
-                  <p className='text-grey'>
+                  <p className='text-grey fs-3 my-4 lead'>
                     Throughout the process of observation and skills development
                     in acquiring the tricks of the trade, we refused to be
                     complaisant. In many ways, like energy (cannot be created or
@@ -72,7 +72,7 @@ const AboutUs = () => {
                     technology… Which will strengthen our competitive advantage
                     and deferential for &quot;the future&quot;.
                   </p>
-                  <p className='text-grey'>
+                  <p className='text-grey fs-3 my-4 lead'>
                     Motivated from our passion and dedication to serve the
                     industry, we desire to continually reproduce solution driven
                     results that have surely provoked more than just smiles and
@@ -89,7 +89,7 @@ const AboutUs = () => {
                     lighting designs - &quot;We became their one solution to
                     their needs&quot;.
                   </p>
-                  <p className='text-grey'>
+                  <p className='text-grey fs-3 my-4 lead'>
                     The appreciation of growth has been witnessed through our
                     own growth, and contractual relationships with businesses
                     and companies that led us into memorable spaces such as{' '}

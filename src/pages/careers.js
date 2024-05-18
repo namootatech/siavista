@@ -19,7 +19,7 @@ export default function CareersPage() {
               <h2 className='text-orange mt-3 mb-2 display-4 funky-text'>
                 Careers
               </h2>
-              <h1 className='mt-3 mb-2 display-2 text-dark-grey fw-light'>
+              <h1 className='mt-3 mb-2 display-6 text-grey fw-light fw-bold '>
                 Join Our Team
               </h1>
               <p className='text-grey lead fs-3'>

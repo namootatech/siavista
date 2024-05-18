@@ -21,13 +21,13 @@ const NextBreadcrumb = ({
     <div className='bg-orange text-decoration-none'>
       <Breadcrumb
         listProps={{
-          className: 'm-0 d-flex align-items-center flex-row py-2 px-4',
+          className: 'm-0 d-flex align-items-center flex-row pb-1 px-4',
         }}
       >
         <Breadcrumb.Item
-          className='text-decoration-none text-white'
+          className='text-decoration-none text-white-trans'
           linkProps={{
-            className: 'text-decoration-none text-white fw-light',
+            className: 'text-decoration-none text-white-trans fw-light',
           }}
           href='/'
         >
@@ -43,7 +43,7 @@ const NextBreadcrumb = ({
                 href={href}
                 linkProps={{
                   className: `text-decoration-none  ${
-                    isLast ? 'text-white' : 'fw-light text-white'
+                    isLast ? 'text-white-trans' : 'fw-light text-white-trans'
                   }`,
                 }}
               >
