@@ -21,7 +21,12 @@ const About = () => {
                         <h3 className="text-grey">World-class Electrical Services</h3>
                         <p className="text-grey text-justify">
                         At Siavista Electrical, our commitment lies in continuous innovation, technological advancement, and superior service delivery, aimed at delighting our customers. 
-                        Our success is driven by our focus on expedient service, building strong customer relationships, expertise in our field, and efficient supply chain management.
+                        Our success is driven by our focus on expedient service, building strong customer relationships, expertise in our field, and efficient supply chain management. 
+                        <ButtonLink
+                            url="/about-us"
+                            text="read more"
+                            textColor="#f9921d"
+                        />
                         </p>
                     </div>
                 </Col>
