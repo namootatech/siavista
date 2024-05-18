@@ -7,50 +7,48 @@ import DottedBox from '@/components/dotted-box';
 import OrangeBox from '@/components/orange-box';
 import ButtonLink from '@/components/button';
 
-const Hero = () => {
-    return (
-        <Container className="mt-5">
-            <Row>
-                <Col md={7} order={2} className="order-md-1">
-                    <div id="hero-image-container">
-                        <div id="dotted-box">
-                            <DottedBox />
-                        </div>
-                        <div className="text-center" id="hero-image">
-                            <Image
-                                className="rounded"
-                                src="/electrician.jpg"
-                                alt="Hero Image"
-                                fluid
-                            />
-                        </div>
-                        <div id="orange-box">
-                            <OrangeBox />
-                        </div>
-                        <div id="orange-box2">
-                            <OrangeBox />
-                        </div>
-                    </div>
-                </Col>
-                <Col md={5} order={1} className="order-md-2">
-                    <div>
-                        <h4 className="text-orange text-uppercase mt-4">Work with us</h4>
-                        <h4 className="text-grey mt-4">Power up with our unmatched service!</h4>
-                        <p className="text-grey mt-3">
-                            The electrical services rendered by Siavista can cover a project in its entirety from original concept to acceptance of completed installation work. Click the button below to explore what we can do for you.
-                        </p>
-                        <ButtonLink
-                            className="orange-btn mt-3"
-                            backgroundColor="#f9921d"
-                            textColor="#ffffff"
-                            text="explore services"
-                            url="#services"
-                        />
-                    </div>
-                </Col>
-            </Row>
-        </Container>
-    );
-}
+const Hero = ({ image, title, subtitle, description, noButton }) => {
+  return (
+    <Container className='mt-5 py-4'>
+      <Row className=' mb-5 py-4'>
+        <Col md={7} order={2} className='order-md-1 py-4'>
+          <div id='hero-image-container'>
+            <div id='dotted-box'>
+              <DottedBox />
+            </div>
+            <div className='text-center' id='hero-image'>
+              <Image src={image} alt='Hero Image' fluid />
+            </div>
+            <div id='orange-box'>
+              <OrangeBox />
+            </div>
+            <div id='orange-box2'>
+              <OrangeBox />
+            </div>
+          </div>
+        </Col>
+        <Col md={5} order={1} className='order-md-2'>
+          <div>
+            <h4 className='text-dark-grey text-uppercase mt-4 fs-1 fw-bold'>
+              {title}
+            </h4>
+            <h4 className='text-orange  mt-4 fs-2 funky-text fw-bold'>
+              {subtitle}
+            </h4>
+            <div className='text-dark-grey mt-3 fs-5'>{description}</div>
+            {!noButton && (
+              <ButtonLink
+                backgroundColor='#f9921d'
+                textColor='#ffffff'
+                text='Get Started'
+                url='/contact'
+              />
+            )}
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default Hero;

@@ -6,7 +6,7 @@ export default async function handler(req, res) {
       //console.log('req.method', req.method, 'req.query', req.query);
       const client = await clientPromise;
       const db = client.db(process.env.NEXT_PUBLIC_SELECTED_DB);
-      const collection = db.collection('testimonials');
+      const collection = db.collection('callbacks');
       const testimonials = await collection
         .find()
         .sort({ createdAt: -1 })
