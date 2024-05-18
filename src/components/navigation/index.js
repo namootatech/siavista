@@ -55,41 +55,6 @@ const NavigationBar = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <Navbar collapseOnSelect expand='lg' className='bg-body-tertiary'>
-      <Container>
-        <Navbar.Brand href='/'>
-          {/* siavista Electrical */}
-          <Image src='newlogo202.png' fluid />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Link className='navigation-link' href='/'>
-              Home
-            </Nav.Link>
-            <Nav.Link className='navigation-link' href='/about-us'>
-              About Us
-            </Nav.Link>
-            <Nav.Link className='navigation-link' href='/services'>
-              Our Services
-            </Nav.Link>
-            <Nav.Link className='navigation-link' href='/gallery'>
-              Gallery
-            </Nav.Link>
-            <Nav.Link className='navigation-link' href='/testimonials'>
-              What our clients say
-            </Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link className='navigation-link' eventKey={2} href='#'>
-              Contact
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-=======
     <div>
       {/* create a banner componenet that will be fixed above the nbav to show messages*/}
       <div className='bg-dark-grey text-white text-center p-2 banner'>
@@ -254,7 +219,7 @@ const NavigationBar = () => {
                 Home
               </Link>
               <Link
-                href='/about'
+                href='/about-us'
                 className='text-decoration-none navigation-link nav-link'
               >
                 About
@@ -313,7 +278,6 @@ const NavigationBar = () => {
         </Container>
       </Navbar>
     </div>
->>>>>>> ad5ee573263591f7e30f6bda83be3606cb2f8363
   );
 };
 export default NavigationBar;

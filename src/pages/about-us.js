@@ -40,11 +40,8 @@ const AboutUs = () => {
     >
       <div>
         <main className='container'>
-            <ServiceCarousel services={servicesData}/>
+            <ServiceCarousel services={servicesData} className="mt-5"/>
             <Container>
-              {/* <div id="about-tagline">
-                <h1 className="text-capitalize">Power Up with Our Unmatched Electrical Services!</h1>
-              </div> */}
               <div id="history-section">
                 <h2 className="text-orange mt-3 mb2">Our Organization History &amp; Background</h2>
                 <p className="text-grey">
