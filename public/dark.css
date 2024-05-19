@@ -36,6 +36,15 @@
     color: #fff !important;
   }
 }
+.bg-light.text-dark-grey {
+  background-color: #f8f8f8;
+  color: #1f1e1c  !important;
+}
+
+.bg-light.text-dark-grey .text-dark-grey {
+  color: #1f1e1c  !important;
+}
+
 .breadcrumb-item a:hover{
   font-size: 14px;
   color: #f9921d !important;
