@@ -1,9 +1,61 @@
 import Head from 'next/head';
 import NavigationBar from '@/components/navigation';
 import Footer from '@/components/footer';
-const Layout = ({ children, seo }) => {
+import ThemeSwitcher from '@/components/theme-switcher';
+import { useState } from 'react';
+import { set } from 'ramda';
+import { AnimatePresence, motion } from 'framer-motion';
+import { blurGrayscale, blurMove } from './anim';
+
+const Layout = ({ children, seo, backgroundColor = 'black' }) => {
+  const animateWith = (variants, custom = null) => {
+    return {
+      initial: 'initial',
+      animate: 'enter',
+      exit: 'exit',
+      custom,
+      variants,
+    };
+  };
+
+  const [themeHasChanged, setThemeHasChanged] = useState(false);
+  const [theme, setTheme] = useState(null);
+
+  const onThemeChange = async (theme) => {
+    setThemeHasChanged(true);
+    setTheme(theme);
+  };
+
+  const pageVariants = {
+    initial: { scale: 0.5 },
+    in: { scale: 1 },
+    out: { scale: 0 },
+  };
+
+  const PageComponents = (
+    <>
+      <NavigationBar />
+      <AnimatePresence mode='wait'>
+        {/* Creates  spring like animation to load main page div*/}
+        <motion.div
+          exit={{ opacity: 0 }}
+          initial='initial'
+          animate='in'
+          variants={pageVariants}
+        >
+          <main>{children}</main>
+        </motion.div>
+      </AnimatePresence>
+      <Footer />
+    </>
+  );
+
   return (
-    <div>
+    <div
+      className={`super-container ${
+        themeHasChanged ? 'theme-has-changed' : ''
+      }`}
+    >
       <Head>
         <title>
           Siavista Electrical - Quality Products & Services{' '}
@@ -60,9 +112,28 @@ const Layout = ({ children, seo }) => {
         <link rel='icon' href='/android-chrome-512x512.png' sizes='any' />
         <link rel='icon' href={`/android-chrome-192x192.png`} sizes='any' />
       </Head>
-      <NavigationBar />
-      <main className='layout-children-container'>{children}</main>
-      <Footer />
+      <div className='position-fixed bottom-0 end-0 switcher-container'>
+        <ThemeSwitcher onThemeChange={onThemeChange} />
+      </div>
+
+      <div className='page stairs'>
+        {/* Animate the current page blur and grayscale whenever the theme is changed */}
+        {/* Waits for changes in the theme state */}
+        <AnimatePresence mode='wait'>
+          <motion.div
+            key={theme}
+            {...animateWith(blurGrayscale)}
+            className='transition-background'
+          />
+        </AnimatePresence>
+
+        <div className='transition-container'>
+          {/* Animates the transition of the page  by applying a moving blure grayscale on top of the page */}
+          <motion.div {...animateWith(blurMove, 1)} />
+        </div>
+
+        {PageComponents}
+      </div>
     </div>
   );
 };
