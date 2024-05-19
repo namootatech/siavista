@@ -556,9 +556,15 @@ body {
   left: 0;
   display: flex;
   flex-direction: column;
-  z-index: 10;
+
   width: 100vw;
   box-shadow: 1px 1px 20px 2px #0000001f !important;
+}
+
+.layout-content {
+  position: relative;
+  box-shadow: 0px -1px 20px 2px #00000036 !important;
+  z-index: 15;
 }
 
 .about-container {
@@ -652,6 +658,7 @@ nav .dropdown-menu .dropdown-item a {
     transform: translateX(2.6rem);
     transition: transform 0.3s, background-color 0.1s ease;
     background: var(--main-light-bg);
+    z-index: 20;
   }
 
   .sun,

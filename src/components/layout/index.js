@@ -43,7 +43,7 @@ const Layout = ({ children, seo, backgroundColor = 'black' }) => {
           animate='in'
           variants={pageVariants}
         >
-          <main>{children}</main>
+          <main className='layout-content'>{children}</main>
         </motion.div>
       </AnimatePresence>
       <Footer />
