@@ -18,16 +18,16 @@ const NextBreadcrumb = ({
   const pathNames = paths.split('/').filter((path) => path);
 
   return (
-    <div className='bg-orange text-decoration-none'>
+    <div className='bg-orange text-decoration-none shadow-sm'>
       <Breadcrumb
         listProps={{
-          className: 'm-0 d-flex align-items-center flex-row pb-1 px-4',
+          className: 'm-0 d-flex align-items-center flex-row pb-1 px-4 py-2 ',
         }}
       >
         <Breadcrumb.Item
           className='text-decoration-none text-white-trans'
           linkProps={{
-            className: 'text-decoration-none text-white-trans fw-light',
+            className: 'text-decoration-none text-white-trans ',
           }}
           href='/'
         >
@@ -43,7 +43,7 @@ const NextBreadcrumb = ({
                 href={href}
                 linkProps={{
                   className: `text-decoration-none  ${
-                    isLast ? 'text-white-trans' : 'fw-light text-white-trans'
+                    isLast ? 'text-white-trans' : 'text-white-trans'
                   }`,
                 }}
               >
