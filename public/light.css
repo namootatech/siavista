@@ -21,6 +21,8 @@
 
 .breadcrumb {
   --bs-breadcrumb-divider-color: var(--main-light-text) !important;
+  background: #e8e8e8 !important;
+  transform: scale(1);
 }
 .breadcrumb-item a {
   font-size: 14px;
@@ -556,6 +558,7 @@ body {
   flex-direction: column;
   z-index: 10;
   width: 100vw;
+  box-shadow: 1px 1px 20px 2px #0000001f !important;
 }
 
 .about-container {

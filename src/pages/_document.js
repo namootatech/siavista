@@ -37,6 +37,7 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <link rel='icon' href='/favicon.ico' />
+        <link rel='stylesheet' href='/dark.css' />
       </Head>
       <body>
         <script

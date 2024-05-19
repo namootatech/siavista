@@ -4,7 +4,7 @@
   --merriweather-font: '__Merriweather_f68def', '__Merriweather_Fallback_f68def';
   --poppins-font: '__Poppins_7df6af', '__Poppins_Fallback_7df6af';
   --bs-breadcrumb-divider-color: #bfbbb778 !important;
-  --main-light-bg: oldlace;
+  --main-light-bg: #805400;
 
   --dark-grey: #948063;
   --dark-grey-two: #4e351d;
@@ -27,7 +27,15 @@
   font-size: 14px;
   /* transition: all 0.3s ease-in-out; */
 }
-
+.bg-transparent.text-dark-grey.border-dark-grey.bg-hover-dark-grey{
+  background-color: #1f1e1c !important;
+  color: #d3d3d3;
+  border-color: #1f1e1c;
+  &:hover{
+    background-color: #3e3d3b !important;
+    color: #fff !important;
+  }
+}
 .breadcrumb-item a:hover{
   font-size: 14px;
   color: #f9921d !important;
@@ -44,7 +52,7 @@
 }
 body {
   font-family: var(--poppins-font);
-  background: oldlace;
+  background: #805400;
 }
 
 .text-orange {
@@ -54,6 +62,14 @@ body {
 .bg-orange {
   background-color: var(--orange-color);
   color: #fff;
+}
+
+.simple-hero-text.bg-oldlace .text-grey{
+  color: var(--dark-grey-three)
+}
+
+.simple-hero-text.bg-oldlace .text-dark-grey{
+  color: var(--dark-grey-two)
 }
 
 .bg-hover-orange {
@@ -68,24 +84,24 @@ body {
 }
 
 .bg-dark-grey {
-  background-color: #363532;
+  background-color: #1f1e1c;
 }
 
 .text-dark-grey {
-  color: #363532;
+  color: #d3d3d3;
 }
 .border-dark-grey {
-  border-color: #363532;
+  border-color: #1f1e1c;
 }
 
 .bg-hover-dark-grey {
   &:hover {
-    background-color: #363532 !important;
+    background-color: #1f1e1c !important;
     color: #fff !important;
   }
 }
 .text-grey {
-  color: var(--grey-color);
+  color:#f8f8f8;
 }
 
 #hero-image-container {
@@ -165,7 +181,7 @@ body {
 }
 
 .bg-hover-orange:hover + .bg-hover-dark-grey {
-  background-color: #363532 !important;
+  background-color: #1f1e1c !important;
   color: #fff !important;
   /* transition: all 0.25s ease-in-out; */
 }
@@ -337,7 +353,7 @@ body {
 }
 
 .home-main {
-  background: oldlace;
+  background: #805400;
   z-index: 0;
   position: relative;
 }
@@ -433,7 +449,7 @@ body {
   filter: saturate(2) drop-shadow(2px 4px 6px black);
 }
 .navbar {
-  border: 4px solid #363532;
+  border: 4px solid #1f1e1c;
   /* transition: all 0.3s ease-in-out; */
 }
 /* .layout-children-container {
@@ -483,8 +499,8 @@ body {
   box-shadow: inset 1px 1px 13px 2px #25232159;
 }
 
-.bg-oldlace {
-  background: oldlace;
+.bg-#805400 {
+  background: #805400;
 }
 .simple-hero {
   min-height: 90vh;
@@ -523,7 +539,7 @@ body {
 }
 
 .breadcrumb {
-  background: #363532;
+  background: #1f1e1c;
 }
 
 .super-nav {

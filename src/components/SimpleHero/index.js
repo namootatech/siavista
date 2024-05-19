@@ -9,7 +9,7 @@ import ButtonLink from '@/components/button';
 
 const Hero = ({ image, title, subtitle, description, noButton }) => {
   return (
-    <div className='mt-1 bg-light shadow shadow-sm simple-hero'>
+    <div className='bg-light shadow shadow-sm simple-hero'>
       <Row className='m-0'>
         <Col
           md={6}
