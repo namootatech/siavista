@@ -1,6 +1,6 @@
 /* This is the default theme style used to avoid FOUC (flash of unstyled content) when the page loads */
-[data-theme='dark'] {
-  --orange-color: red;
+:root {
+  --orange-color: orange;
   --grey-color: #86827c;
   --merriweather-font: '__Merriweather_f68def', '__Merriweather_Fallback_f68def';
   --poppins-font: '__Poppins_7df6af', '__Poppins_Fallback_7df6af';
