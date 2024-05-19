@@ -59,17 +59,13 @@ export default function ThemeSwitcher({ onThemeChange }) {
     if (themeState === 'dark') {
       await onThemeChange('light');
       localStorage.setItem('theme', 'light');
-
-      setTimeout(() => {
-        setThemeState('light');
-      }, 500);
+      setThemeState('light');
+      setTimeout(() => {}, 100);
     } else {
       await onThemeChange('dark');
       localStorage.setItem('theme', 'dark');
-
-      setTimeout(() => {
-        setThemeState('dark');
-      }, 500);
+      setThemeState('dark');
+      setTimeout(() => {}, 100);
     }
   };
 
