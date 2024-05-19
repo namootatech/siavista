@@ -1,11 +1,12 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
+import Image from 'next/image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import DottedBox from '@/components/dotted-box';
 import OrangeBox from '@/components/orange-box';
 import ButtonLink from '@/components/button';
+import blurDataUrl from '@/lib/blurDataUri';
 
 const Hero = ({ image, title, subtitle, description, noButton }) => {
   return (
@@ -17,7 +18,15 @@ const Hero = ({ image, title, subtitle, description, noButton }) => {
               <DottedBox />
             </div>
             <div className='text-center' id='hero-image'>
-              <Image src={image} alt='Hero Image' fluid />
+              <Image
+                src={image}
+                alt='Hero Image'
+                width={730}
+                height={450}
+                layout='responsive'
+                placeholder='blur'
+                blurDataURL={blurDataUrl}
+              />
             </div>
             <div id='orange-box'>
               <OrangeBox />
