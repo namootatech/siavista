@@ -156,12 +156,11 @@
     left: 0;
     top: 0;
     pointer-events: none;
-    z-index: 2;
+    z-index: 30;
     div {
       position: relative;
       height: 100%;
       width: 100%;
-      background: transparent;
       outline: 0;
       border: 0;
       backdrop-filter: grayscale(100%);
@@ -176,7 +175,7 @@
     pointer-events: none;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
     /* background: url('/electrician.jpg') no-repeat center center fixed;
     background-size: cover; */
   }

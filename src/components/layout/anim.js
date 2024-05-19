@@ -62,16 +62,16 @@ export const opacity = {
     opacity: 0,
 
     transition: {
-      duration: 0.3,
+      duration: 0.5,
     },
     scale: 2,
   },
   exit: {
-    opacity: 1,
+    opacity: 0,
     scale: 2,
     delay: 0,
     transition: {
-      duration: 0.3,
+      duration: 0.5,
     },
   },
 };

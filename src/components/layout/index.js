@@ -5,7 +5,7 @@ import ThemeSwitcher from '@/components/theme-switcher';
 import { useState } from 'react';
 import { set } from 'ramda';
 import { AnimatePresence, motion } from 'framer-motion';
-import { blurGrayscale, blurMove } from './anim';
+import { blurGrayscale, blurMove, opacity } from './anim';
 
 const Layout = ({ children, seo, backgroundColor = 'black' }) => {
   const animateWith = (variants, custom = null) => {
@@ -50,6 +50,7 @@ const Layout = ({ children, seo, backgroundColor = 'black' }) => {
     </>
   );
 
+  console.log('themeHasChanged', themeHasChanged);
   return (
     <div
       className={`super-container ${
@@ -119,14 +120,15 @@ const Layout = ({ children, seo, backgroundColor = 'black' }) => {
       <div className='page stairs'>
         {/* Animate the current page blur and grayscale whenever the theme is changed */}
         {/* Waits for changes in the theme state */}
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key={theme}
-            {...animateWith(blurGrayscale)}
-            className='transition-background'
-          />
-        </AnimatePresence>
-
+        <div className='transition-container'>
+          <AnimatePresence mode='wait'>
+            <motion.div
+              key={theme}
+              {...animateWith(opacity)}
+              className='transition-background'
+            />
+          </AnimatePresence>
+        </div>
         <div className='transition-container'>
           {/* Animates the transition of the page  by applying a moving blure grayscale on top of the page */}
           <motion.div {...animateWith(blurMove, 1)} />

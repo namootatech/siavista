@@ -5,7 +5,6 @@ import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
 import Toggle from '../toggle-switch-button';
 import { on, set } from 'ramda';
 export default function ThemeSwitcher({ onThemeChange }) {
-  console.log('onThemeChange:', onThemeChange);
   const [themeState, setThemeState] = useState('dark');
 
   // these themes live in the pubic folder
