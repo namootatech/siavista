@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Image from 'react-bootstrap/Image';
+import Image from 'next/image';
 import Link from 'next/link';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import pages from '@/config/pages';
 import Banner from '../banner';
+import blurDataUrl from '@/lib/blurDataUri';
 
 import NextBreadcrumb from '../breadcrumb';
 
@@ -33,7 +34,15 @@ const NavigationBar = () => {
         <Container fluid>
           <Navbar.Brand href='/'>
             {/* siavista Electrical */}
-            <Image src='/newlogo202.png' fluid />
+            <Image
+              src='/newlogo202.png'
+              width={201}
+              height={78}
+              layout='responsive'
+              placeholder='blur'
+              blurDataURL={blurDataUrl}
+              priority
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>

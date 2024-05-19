@@ -26,6 +26,7 @@ const Hero = ({ image, title, subtitle, description, noButton }) => {
                 layout='responsive'
                 placeholder='blur'
                 blurDataURL={blurDataUrl}
+                priority
               />
             </div>
             <div id='orange-box'>

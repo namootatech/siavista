@@ -44,6 +44,7 @@ const Testimonials = () => {
               blurDataURL={blurDataUrl}
               src={testimonial.image || '/aboutBanner.png'} // Replace with default image path
               alt={testimonial.name + ' ' + testimonial.surname}
+              priority
             />
           </div>
           <div className='col-md-8 text-left'>
