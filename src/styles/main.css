@@ -175,7 +175,7 @@
     pointer-events: none;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
     /* background: url('/electrician.jpg') no-repeat center center fixed;
     background-size: cover; */
   }
