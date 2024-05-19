@@ -62,14 +62,14 @@ export default function ThemeSwitcher({ onThemeChange }) {
 
       setTimeout(() => {
         setThemeState('light');
-      }, 200);
+      }, 500);
     } else {
       await onThemeChange('dark');
       localStorage.setItem('theme', 'dark');
 
       setTimeout(() => {
         setThemeState('dark');
-      }, 200);
+      }, 500);
     }
   };
 
