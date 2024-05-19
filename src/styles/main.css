@@ -181,3 +181,7 @@
     background-size: cover; */
   }
 }
+
+.text-white-force {
+  color: white !important;
+}

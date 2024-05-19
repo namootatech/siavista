@@ -29,7 +29,9 @@ const NavigationBar = () => {
   return (
     <div className='super-nav'>
       {/* create a banner componenet that will be fixed above the nbav to show messages*/}
-      <Banner showModal={show} onClose={handleClose} />
+      <div className='d-none d-lg-block'>
+        <Banner showModal={show} onClose={handleClose} />
+      </div>
       <Navbar collapseOnSelect expand='lg' className='bg-dark-grey '>
         <Container fluid>
           <Navbar.Brand href='/'>
@@ -44,7 +46,8 @@ const NavigationBar = () => {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
+
+          <div className='fs-5 w-100 d-xs-block d-sm-block d-md-none d-lg-none d-xl-none'>
             <Nav className='me-auto'>
               <Link
                 href='/'
@@ -93,17 +96,92 @@ const NavigationBar = () => {
                 What our clients say
               </Link>
             </Nav>
+            <Nav className='d-md-none d-lg-none d-sm-block  d-xs-block'>
+              <Banner showModal={show} onClose={handleClose} mobile />
+            </Nav>
             <Nav className='ctas'>
               <Link
                 href='#'
                 onClick={handleShow}
-                className='nav-link text-decoration-none navigation-link bg-dark-grey-500 bg-hover-orange p-2 px-4 text-white  shadow shadow-sm'
+                className='p-sm-4 nav-link text-decoration-none navigation-link bg-dark-grey-500 bg-hover-orange p-2 px-4 text-white  shadow shadow-sm'
               >
                 Call me back
               </Link>
               <Link
                 href='/contact'
-                className='nav-link navigation-link p-2 bg-orange shadow shadow-sm px-4 bg-hover-light text-decoration-none'
+                className='p-sm-4 nav-link navigation-link p-2 bg-orange shadow shadow-sm px-4 bg-hover-light text-decoration-none'
+              >
+                Chat with us
+              </Link>
+            </Nav>
+          </div>
+
+          <Navbar.Collapse
+            id='responsive-navbar-nav'
+            className='d-none lg-block'
+          >
+            <Nav className='me-auto'>
+              <Link
+                href='/'
+                className='text-decoration-none navigation-link nav-link'
+              >
+                Home
+              </Link>
+              <Link
+                href='/about-us'
+                className='text-decoration-none navigation-link nav-link'
+              >
+                About
+              </Link>
+              <NavDropdown
+                title='Our services'
+                id='basic-nav-dropdown'
+                variant='dark'
+                className='text-decoration-none navigation-link nav-link dropdown'
+              >
+                {pages.map((service, index) => (
+                  <Link
+                    key={index}
+                    href={`/services/${service.id}`}
+                    className='text-decoration-none dropdown-item'
+                    passHref
+                  >
+                    <NavDropdown.Item
+                      variant='dark'
+                      href={`/services/${service.id}`}
+                    >
+                      {kebabCaseToSentenceCase(service.id)}
+                    </NavDropdown.Item>
+                  </Link>
+                ))}
+              </NavDropdown>
+              <Link
+                href='/galllery'
+                className='text-decoration-none navigation-link nav-link'
+              >
+                Gallery
+              </Link>
+              <Link
+                href='/testimonials'
+                className='text-decoration-none navigation-link'
+              >
+                What our clients say
+              </Link>
+            </Nav>
+            <Nav className='d-md-none d-lg-none d-sm-block  d-xs-block'>
+              <Banner showModal={show} onClose={handleClose} mobile />
+            </Nav>
+            <Nav className='ctas'>
+              <Link
+                href='#'
+                onClick={handleShow}
+                className='p-sm-4 nav-link text-decoration-none navigation-link bg-dark-grey-500 bg-hover-orange p-2 px-4 text-white  shadow shadow-sm'
+              >
+                Call me back
+              </Link>
+              <Link
+                href='/contact'
+                className='p-sm-4 nav-link navigation-link p-2 bg-orange shadow shadow-sm px-4 bg-hover-light text-decoration-none'
               >
                 Chat with us
               </Link>
@@ -111,7 +189,10 @@ const NavigationBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <NextBreadcrumb />
+
+      <div className='d-none d-lg-block'>
+        <NextBreadcrumb />
+      </div>
     </div>
   );
 };

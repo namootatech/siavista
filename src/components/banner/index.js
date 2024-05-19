@@ -6,7 +6,7 @@ import { Col, ProgressBar, Row } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const Banner = ({ showModal, onClose }) => {
+const Banner = ({ showModal, onClose, mobile }) => {
   const [show, setShow] = useState(false);
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
@@ -47,47 +47,81 @@ const Banner = ({ showModal, onClose }) => {
 
   return (
     <>
-      <div className='bg-orange text-white text-center p-1 banner'>
+      <div
+        className={`${
+          mobile
+            ? 'border shadow-sm rounded-2 bg-secondary mt-4'
+            : 'bg-orange text-white-force text-center p-1 banner'
+        }`}
+      >
         <Row>
           <Col
-            lg={5}
-            className='text-left d-flex flex-lg-row flex-column justify-content-start align-items-start'
+            lg={4}
+            className={`${
+              mobile
+                ? 'mt-4 mb-2 fs-5 text-center d-flex flex-column gap-2 justify-content-center align-items-center'
+                : 'text-left d-flex flex-lg-row flex-column justify-content-start align-items-start'
+            } d-flex`}
           >
             <Link
               href='/compliance'
-              className='text-white-trans text-decoration-none  mx-3'
+              className={`${
+                mobile
+                  ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
+                  : 'text-white-trans text-decoration-none  mx-3'
+              } d-flex`}
             >
               <small>Compliance</small>
             </Link>
             <Link
               href='/careers'
-              className='text-white-trans text-decoration-none  mx-3'
+              className={`${
+                mobile
+                  ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
+                  : 'text-white-trans text-decoration-none  mx-3'
+              } d-flex`}
             >
               <small>Careers</small>
             </Link>
           </Col>
-          <Col lg={2} className='text-center'></Col>
+
           <Col
-            lg={5}
-            className='text-right d-flex flex-lg-row flex-column justify-content-end align-items-end'
+            lg={8}
+            className={`${
+              mobile
+                ? ' mb-5 fs-5 text-center d-flex flex-column gap-2 justify-content-center align-items-center'
+                : 'text-right d-flex flex-lg-row flex-column justify-content-end align-items-end'
+            } d-flex`}
           >
             <a
               href='tel:+27782468156'
-              className='text-white-trans text-decoration-none  mx-3'
+              className={`${
+                mobile
+                  ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
+                  : 'text-white-trans text-decoration-none  mx-3'
+              } d-flex`}
             >
               <i className='fas fa-phone-alt'></i>{' '}
               <small>+27 78 246 8156</small>
             </a>
             <a
               href='mailto:info@siavistaelectrical.co.za'
-              className='text-white-trans text-decoration-none  mx-3'
+              className={`${
+                mobile
+                  ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
+                  : 'text-white-trans text-decoration-none  mx-3'
+              } d-flex`}
             >
               <i className='fas fa-envelope'></i>
               <small>info@siavistaelectrical.co.za</small>
             </a>
             <Link
               href='/request-support'
-              className='text-white-trans text-decoration-none  mx-3'
+              className={`${
+                mobile
+                  ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
+                  : 'text-white-trans text-decoration-none  mx-3'
+              } d-flex`}
             >
               <small>Request support</small>
             </Link>
@@ -159,7 +193,7 @@ const Banner = ({ showModal, onClose }) => {
             </h2>
             <Button
               variant='dark'
-              className='text-center bg-orange text-white shadow shadow-lg rounded-0 border-0'
+              className='text-center bg-orange text-white-force shadow shadow-lg rounded-0 border-0'
               onClick={justClose}
             >
               Close
@@ -177,7 +211,7 @@ const Banner = ({ showModal, onClose }) => {
             </h2>
             <Button
               variant='dark'
-              className='bg-orange text-white shadow shadow-lg rounded-0 border-0'
+              className='bg-orange text-white-force shadow shadow-lg rounded-0 border-0'
               onClick={justClose}
             >
               Close
@@ -192,13 +226,13 @@ const Banner = ({ showModal, onClose }) => {
           }
         >
           <button
-            className='nav-link text-decoration-none navigation-link bg-dark-grey text-white shadow shadow-lg px-4 bg-hover-light p-2 px-4 text-white  shadow shadow-lg'
+            className='nav-link text-decoration-none navigation-link  text-white-force shadow shadow-lg px-4 bg-hover-light p-2 px-4 text-white-force  shadow shadow-lg'
             onClick={justClose}
           >
             Close
           </button>
           <button
-            className='nav-link navigation-link text-white p-2 bg-orange bg-hover-light text-white shadow shadow-lg px-4 text-decoration-none'
+            className='nav-link navigation-link text-white-force p-2 bg-orange bg-hover-light text-white-force shadow shadow-lg px-4 text-decoration-none'
             onClick={handleClose}
           >
             Save Changes
