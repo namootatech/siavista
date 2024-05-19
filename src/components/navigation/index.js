@@ -175,13 +175,13 @@ const NavigationBar = () => {
               <Link
                 href='#'
                 onClick={handleShow}
-                className='p-sm-4 nav-link text-decoration-none navigation-link bg-dark-grey-500 bg-hover-orange p-2 px-4 text-white  shadow shadow-sm'
+                className='nav-link text-decoration-none navigation-link bg-dark-grey-500 bg-hover-orange p-2 px-4 text-white  shadow shadow-sm'
               >
                 Call me back
               </Link>
               <Link
                 href='/contact'
-                className='p-sm-4 nav-link navigation-link p-2 bg-orange shadow shadow-sm px-4 bg-hover-light text-decoration-none'
+                className='nav-link navigation-link p-2 bg-orange shadow shadow-sm px-4 bg-hover-light text-decoration-none'
               >
                 Chat with us
               </Link>
