@@ -35,7 +35,7 @@ export const blurGrayscale = {
   enter: {
     opacity: 1,
     transition: {
-      duration: 0.24,
+      duration: 1,
     },
     scale: 1,
     'backdrop-filter': ' blur(0px) grayscale(0)',
@@ -46,7 +46,7 @@ export const blurGrayscale = {
     scale: 2,
     delay: 0,
     transition: {
-      duration: 0.24,
+      duration: 1,
     },
   },
 };
