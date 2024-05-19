@@ -18,7 +18,7 @@ function setInitialColorMode() {
     const mql = window.matchMedia(mediaQuery);
     const hasImplicitPreference = typeof mql.matches === 'boolean';
     if (hasImplicitPreference) {
-      return mql.matches ? 'dark' : 'light';
+      return mql.matches ? 'default' : 'light';
     }
     // default to 'light'.
     return 'light';

@@ -1,3 +1,25 @@
+/* This is the default theme style used to avoid FOUC (flash of unstyled content) when the page loads */
+[data-theme='default'] {
+  --orange-color: red;
+  --grey-color: #86827c;
+  --merriweather-font: '__Merriweather_f68def', '__Merriweather_Fallback_f68def';
+  --poppins-font: '__Poppins_7df6af', '__Poppins_Fallback_7df6af';
+  --bs-breadcrumb-divider-color: #bfbbb778 !important;
+  --main-light-bg: #805400;
+
+  --dark-grey: #948063;
+  --dark-grey-two: #4e351d;
+  --dark-grey-three: #2b2008;
+  --main-dark-bg: var(--dark-grey-two);
+  --main-light-text: #fff;
+  --main-dark-text: var(--dark-grey-two);
+  --contrasting-text-color: #bfbbb778;
+  --accent-el-background: var(--orange-color);
+  --accent-el-front: #fff;
+  --accent-text: var(--orange-color);
+  --transition-color: var(--dark-grey-three);
+}
+
 .theme-toggle-container.dark-active {
   position: relative;
   display: flex;
