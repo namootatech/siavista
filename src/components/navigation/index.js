@@ -36,9 +36,8 @@ const NavigationBar = () => {
             {/* siavista Electrical */}
             <Image
               src='/newlogo202.png'
-              width={201}
-              height={78}
-              layout='responsive'
+              width={189}
+              height={58}
               placeholder='blur'
               blurDataURL={blurDataUrl}
               priority
