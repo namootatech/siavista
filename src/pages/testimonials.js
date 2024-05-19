@@ -81,7 +81,7 @@ const Testimonials = () => {
     >
       <div>
         <main className='container'>
-          <div className='container mt-5'>
+          <div className='container pt-5'>
             <Row className='d-flex flex-row justify-content-center align-items-center'>
               <Col lg={8} md={12} className='mt-2 py-4'>
                 <h2 className='text-orange my-4 funky-text display-3 fw-bold'>
