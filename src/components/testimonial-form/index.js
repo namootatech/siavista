@@ -101,7 +101,7 @@ const TestimonialForm = () => {
                 value={testimonialData.name}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='First Name'
               />
             </Form.Group>
@@ -115,7 +115,7 @@ const TestimonialForm = () => {
                 value={testimonialData.surname}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='Last Name'
               />
             </Form.Group>
@@ -131,7 +131,7 @@ const TestimonialForm = () => {
                 value={testimonialData.role}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='e.g. CEO, Manager, etc.'
               />
             </Form.Group>
@@ -145,7 +145,7 @@ const TestimonialForm = () => {
                 value={testimonialData.company}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='Company Name'
               />
             </Form.Group>
@@ -164,7 +164,7 @@ const TestimonialForm = () => {
                 value={testimonialData.cellphone}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='e.g. 0821234567'
               />
             </Form.Group>
@@ -178,7 +178,7 @@ const TestimonialForm = () => {
                 value={testimonialData.email}
                 onChange={handleChange}
                 required
-                className='text-grey border-0 shadow-sm rounded-0 fw-light'
+                className='text-grey  shadow-sm rounded-0 fw-light'
                 placeholder='e.g. email@example.com'
               />
             </Form.Group>
@@ -194,7 +194,7 @@ const TestimonialForm = () => {
             value={testimonialData.comment}
             onChange={handleChange}
             required
-            className='text-grey border-0 shadow-sm rounded-0 fw-light'
+            className='text-grey  shadow-sm rounded-0 fw-light'
           />
         </Form.Group>
         <ImageUploader setTestimonialData={setTestimonialData} />
@@ -214,7 +214,7 @@ const TestimonialForm = () => {
             <Button
               variant='dark'
               type='submit'
-              className='btn text-dark-grey-500  bg-orange rounded-0  border-0 text-white px-4 py-2 me-2 bg-hover-dark-grey'
+              className='btn bg-hover-light  bg-orange rounded-0  px-4 py-2 me-2  border-0 shadow-sm'
               disabled={isLoading || showThankYou}
             >
               Submit
@@ -223,7 +223,7 @@ const TestimonialForm = () => {
           <div className='col-md-6 my-4 d-flex flex-row justify-content-end'>
             {isLoading && (
               <button
-                class='btn text-dark-grey-500  bg-orange rounded-0 px-4 py-2 me-2 bg-hover-dark-grey'
+                class='btn text-dark-grey-500  bg-orange rounded-0 px-4 py-2 me-2  border-0 shadow-sm'
                 type='button'
                 disabled
               >

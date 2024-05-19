@@ -17,7 +17,7 @@ const About = () => {
             <h3 className='fw-bold text-orange funky-text display-6 shadow display-4 shadow-sm my-4'>
               World-class Electrical Services
             </h3>
-            <p className='text-light text-center  fs-4'>
+            <p className='text-grey text-center  fs-4'>
               At Siavista Electrical, our commitment lies in continuous
               innovation, technological advancement, and superior service
               delivery, aimed at delighting our customers. Our success is driven

@@ -86,10 +86,10 @@ const LightingPage = ({ page }) => {
                       <span className='text-white'> Are you ?</span>
                     </h3>
 
-                    <button className='btn me-4 bg-dark-grey-500 text-white bg-hover-orange rounded-0 px-4 py-2'>
+                    <button className='btn me-4 bg-light bg-hover-orange  shadow-sm rounded-0 px-4 py-2'>
                       Contact us
                     </button>
-                    <button className='btn bg-orange text-white rounded-0 bg-hover-dark-grey px-4 py-2 me-2 bg-'>
+                    <button className='btn bg-orange rounded-0 bg-hover-light shadow-sm px-4 py-2 me-2 bg-'>
                       Get quote
                     </button>
                   </Col>
@@ -97,7 +97,7 @@ const LightingPage = ({ page }) => {
               </Col>
             </Row>
             <ServiceCarousel services={servicesData} className='mt-5' />
-            <Row className='p-4 d-flex justify-content-center align-items-center bg-oldlace text-dark-grey-500'>
+            <Row className='p-4 d-flex justify-content-center align-items-center text-dark-grey bg-light'>
               <Col md={10} className='p-4'>
                 <h4 className='fs-2 my-4'>{page?.sellingPoints?.title}</h4>
                 <div className='d-flex flex-row gap-2'>
@@ -106,20 +106,20 @@ const LightingPage = ({ page }) => {
                       key={point.title}
                       text={'light'}
                       style={{ width: '18rem' }}
-                      className='mb-2 border-0 shadow shadow-sm bg-light text-dark-grey-500 rounded-0'
+                      className='mb-2 border-0 shadow shadow-sm bg-light text-dark-grey rounded-0'
                     >
                       <Card.Body>
                         <Card.Title className='text-orange fw-bold fs-6'>
                           {point.title}{' '}
                         </Card.Title>
-                        <Card.Text className='text-dark-grey-500 fs-6'>
+                        <Card.Text className='text-dark-grey fs-6'>
                           {point.description}
                         </Card.Text>
                       </Card.Body>
                     </Card>
                   ))}
                 </div>
-                <div className='d-flex justify-content-center bg-oldlace flex-column p-4'>
+                <div className='d-flex justify-content-center flex-column '>
                   <h4 className='fs-2 my-4'>{page?.footer?.title}</h4>
                   <p className='fs-5'>{page?.footer?.description}</p>
                 </div>
@@ -129,7 +129,7 @@ const LightingPage = ({ page }) => {
         </Col>
       </Row>
 
-      <Row className='d-flex justify-content-center align-items-center m-0 p-0 min-vw-100'>
+      <Row className='d-flex justify-content-center align-items-center m-0 p-0 min-vw-100 bg-light'>
         <Col className='text-left m-0 p-0' md={12} sm={12} xs={12}>
           <div className='text-center p-4 d-flex justify-content-center flex-column align-items-center'>
             <p>Chat with us on: </p>

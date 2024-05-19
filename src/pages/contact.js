@@ -137,7 +137,7 @@ export default function Home() {
                   <Col md={12}>
                     <Form onSubmit={handleSubmit} className='text-white'>
                       <Form.Group controlId='fullName'>
-                        <Form.Label className='text-light mb-2 mt-4'>
+                        <Form.Label className='text-white mb-2 mt-4'>
                           Full Name
                         </Form.Label>
                         <Form.Control
@@ -150,7 +150,7 @@ export default function Home() {
                         />
                       </Form.Group>
                       <Form.Group controlId='email'>
-                        <Form.Label className='text-light mb-2 mt-4'>
+                        <Form.Label className='text-white mb-2 mt-4'>
                           Email address
                         </Form.Label>
                         <Form.Control
@@ -163,7 +163,7 @@ export default function Home() {
                         />
                       </Form.Group>
                       <Form.Group controlId='subject'>
-                        <Form.Label className='text-light mb-2 mt-4'>
+                        <Form.Label className='text-white mb-2 mt-4'>
                           Contact Number
                         </Form.Label>
                         <Form.Control
@@ -176,7 +176,7 @@ export default function Home() {
                         />
                       </Form.Group>
                       <Form.Group controlId='body'>
-                        <Form.Label className='text-light mb-2 mt-4'>
+                        <Form.Label className='text-white mb-2 mt-4'>
                           Description of what you need
                         </Form.Label>
                         <br />
