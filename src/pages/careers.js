@@ -14,7 +14,7 @@ export default function CareersPage() {
     <Layout>
       <main className='overflow-hidden home-main'>
         <Row className='d-flex flex-row justify-content-center align-items-center'>
-          <Col lg={8} md={12} className='mt-2 mb-5 py-4'>
+          <Col lg={8} md={10} sm={10} xs={10} className='mt-2 mb-5 py-4'>
             <div id='history-section'>
               <h2 className='text-orange mt-3 mb-2 display-4 funky-text'>
                 Careers

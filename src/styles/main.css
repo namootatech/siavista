@@ -185,3 +185,24 @@
 .text-white-force {
   color: white !important;
 }
+
+.navbar-toggler {
+  background: #fff;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 20;
+}
+
+.super-nav {
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    z-index: 19;
+  }
+}
+
+.layout-content {
+  @media screen and (max-width: 768px) {
+    margin-top: 5em;
+  }
+}

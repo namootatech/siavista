@@ -48,7 +48,7 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
 
           <div className='fs-5 w-100 d-xs-block d-sm-block d-md-none d-lg-none d-xl-none'>
-            <Nav className='me-auto'>
+            <Navbar.Collapse className='me-auto' id='responsive-navbar-nav'>
               <Link
                 href='/'
                 className='text-decoration-none navigation-link nav-link'
@@ -95,11 +95,11 @@ const NavigationBar = () => {
               >
                 What our clients say
               </Link>
-            </Nav>
-            <Nav className='d-md-none d-lg-none d-sm-block  d-xs-block'>
+            </Navbar.Collapse>
+            <Navbar.Collapse className=''>
               <Banner showModal={show} onClose={handleClose} mobile />
-            </Nav>
-            <Nav className='ctas'>
+            </Navbar.Collapse>
+            <Navbar.Collapse className='ctas'>
               <Link
                 href='#'
                 onClick={handleShow}
@@ -113,7 +113,7 @@ const NavigationBar = () => {
               >
                 Chat with us
               </Link>
-            </Nav>
+            </Navbar.Collapse>
           </div>
 
           <Navbar.Collapse

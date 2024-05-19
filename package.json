@@ -20,6 +20,7 @@
     "react": "^18",
     "react-bootstrap": "^2.10.2",
     "react-css-theme-switcher": "^0.3.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
     "react-icons": "^5.2.1",

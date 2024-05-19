@@ -1,5 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from 'react-device-detect';
 
 function SampleArrow(props) {
   const { className, style, onClick } = props;
@@ -28,6 +34,15 @@ function ResponsiveSlider({ children, items }) {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 821,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
