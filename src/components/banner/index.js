@@ -116,7 +116,7 @@ const Banner = ({ showModal, onClose, mobile }) => {
               <small>info@siavistaelectrical.co.za</small>
             </a>
             <Link
-              href='/request-support'
+              href='/contact'
               className={`${
                 mobile
                   ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
