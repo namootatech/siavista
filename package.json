@@ -23,6 +23,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
+    "react-hotjar": "^6.3.1",
     "react-icons": "^5.2.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
