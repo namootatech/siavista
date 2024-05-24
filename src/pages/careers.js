@@ -32,7 +32,7 @@ export default function CareersPage() {
                 environment. If you are interested in joining our team, please
                 send your resume to
                 <a
-                  href='mailto:"info@siavistaelectrical.co.za'
+                  href='mailto:info@siavistaelectrical.co.za'
                   className='text-orange'
                 >
                   {' '}
