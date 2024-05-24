@@ -12,6 +12,7 @@ import {
   PiNumberCircleThreeFill,
 } from 'react-icons/pi';
 import ServiceCarousel from '@/components/about-carousel';
+import Link from 'next/link';
 
 const numbers = [
   PiNumberCircleOneFill,
@@ -86,12 +87,18 @@ const LightingPage = ({ page }) => {
                       <span className='text-white'> Are you ?</span>
                     </h3>
 
-                    <button className='btn me-4 bg-light bg-hover-orange  shadow-sm rounded-0 px-4 py-2'>
+                    <Link
+                      href='/contact'
+                      className='btn me-4 bg-light bg-hover-orange  shadow-sm rounded-0 px-4 py-2'
+                    >
                       Contact us
-                    </button>
-                    <button className='btn bg-orange rounded-0 bg-hover-light shadow-sm px-4 py-2 me-2 bg-'>
+                    </Link>
+                    <Link
+                      href='/contact'
+                      className='btn bg-orange rounded-0 bg-hover-light shadow-sm px-4 py-2 me-2 bg-'
+                    >
                       Get quote
-                    </button>
+                    </Link>
                   </Col>
                 </Row>
               </Col>
