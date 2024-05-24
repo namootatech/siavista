@@ -193,6 +193,7 @@ const TestimonialForm = () => {
             name='comment'
             value={testimonialData.comment}
             onChange={handleChange}
+            maxLength={300}
             required
             className='text-grey  shadow-sm rounded-0 fw-light'
           />
