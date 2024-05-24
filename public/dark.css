@@ -481,7 +481,7 @@ body {
     img {
       width: 50%;
       object-fit: scale-down;
-      filter: grayscale(1) contrast(1.5);
+      filter: grayscale(0) contrast(1.5);
     }
   }
   .slick-track {
