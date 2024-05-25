@@ -105,7 +105,7 @@ const Banner = ({ showModal, onClose, mobile }) => {
               <small>+27 78 246 8156</small>
             </a>
             <a
-              href='mailto:info@siavistaelectrical.co.za'
+              href='mailto:info@siavistaelectrical.com'
               className={`${
                 mobile
                   ? ' w-100 text-center d-flex p-3 justify-content-center text-decoration-none bg-hover-orange text-white-force  text-white-force'
@@ -113,7 +113,7 @@ const Banner = ({ showModal, onClose, mobile }) => {
               } d-flex`}
             >
               <i className='fas fa-envelope'></i>
-              <small>info@siavistaelectrical.co.za</small>
+              <small>info@siavistaelectrical.com</small>
             </a>
             <Link
               href='/contact'

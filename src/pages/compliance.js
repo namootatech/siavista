@@ -87,11 +87,11 @@ export default function CareersPage() {
                 contribution to a healthier, more sustainable world. For any
                 queries send us an email at
                 <a
-                  href='mailto:info@siavistaelectrical.co.za?cc=siavistaelectrical@gmail.com&subject=Compliance%20Query'
+                  href='mailto:info@siavistaelectrical.com?cc=siavistaelectrical@gmail.com&subject=Compliance%20Query'
                   className='text-orange'
                 >
                   {' '}
-                  compliance@siavistaelectrical.co.za
+                  compliance@siavistaelectrical.com
                 </a>
               </p>
             </div>
