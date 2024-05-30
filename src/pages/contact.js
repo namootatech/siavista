@@ -7,6 +7,7 @@ import About from '@/components/about';
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import { FaWhatsapp, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import axios from 'axios';
 
 import DottedBox from '@/components/dotted-box';
 import OrangeBox from '@/components/orange-box';
@@ -19,22 +20,65 @@ export default function Home() {
     body: '',
   });
   const [showAlert, setShowAlert] = useState(false);
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const validateEmail = (email) => {
+    // Basic email validation using regular expression
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const validateCellphone = (cellphone) => {
+    // Validate South African cellphone number format (10 digits starting with 0)
+    return /^0[0-9]{9}$/.test(cellphone);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add your logic to send the form data
-    setShowAlert(true);
-    setFormData({
-      fullName: '',
-      email: '',
-      subject: '',
-      body: '',
-    });
+    setIsLoading(true);
+
+    if (!validateEmail(formData.email)) {
+      setError('Please enter a valid email address.');
+      setShowAlert(true);
+      setIsLoading(false);
+      return;
+    } else if (!validateCellphone(formData.cellphone)) {
+      setError(
+        'Please enter a valid South African cellphone number (10 digits starting with 0).'
+      );
+      setShowAlert(true);
+      setIsLoading(false);
+      return;
+    } else {
+      setError(null);
+      setShowAlert(false);
+    }
+
+    //console.log(formData);
+    axios
+      .post('/api/messages/add', formData)
+      .then((response) => {
+        //console.log(response.data);
+        setShowThankYou(true);
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error submitting message:', error);
+        setError(
+          'An error occurred while submitting your message. Please check your internet connection and try again.'
+        );
+        setShowAlert(true);
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -162,13 +206,26 @@ export default function Home() {
                           className='text-muted'
                         />
                       </Form.Group>
-                      <Form.Group controlId='subject'>
+                      <Form.Group controlId='cellphone'>
                         <Form.Label className='text-white mb-2 mt-4'>
                           Contact Number
                         </Form.Label>
                         <Form.Control
                           type='text'
                           placeholder='Enter cellphone number'
+                          name='cellphone'
+                          value={formData.cellphone}
+                          onChange={handleChange}
+                          className='text-muted'
+                        />
+                      </Form.Group>
+                      <Form.Group controlId='subject'>
+                        <Form.Label className='text-white mb-2 mt-4'>
+                          Subject
+                        </Form.Label>
+                        <Form.Control
+                          type='text'
+                          placeholder='Enter subject'
                           name='subject'
                           value={formData.subject}
                           onChange={handleChange}
@@ -177,13 +234,9 @@ export default function Home() {
                       </Form.Group>
                       <Form.Group controlId='body'>
                         <Form.Label className='text-white mb-2 mt-4'>
-                          Description of what you need
+                          Description
                         </Form.Label>
                         <br />
-                        <small className='text-orange mb-4'>
-                          Feel free to describe to us what you need and how we
-                          can help you.
-                        </small>
                         <br />
                         <Form.Control
                           as='textarea'
@@ -195,17 +248,52 @@ export default function Home() {
                           className='text-muted mb-4 mt-4'
                         />
                       </Form.Group>
-                      <ButtonLink
-                        backgroundColor='#f9921d'
-                        textColor='#ffffff'
-                        url='/services'
-                        text='Submit'
-                        className='mb-4'
-                      />
+                      <div className='my-4 '>
+                        {showAlert && error && (
+                          <Alert
+                            variant='danger'
+                            onClose={() => setShowAlert(false)}
+                            dismissible
+                          >
+                            <small className='fs-6'>{error}</small>
+                          </Alert>
+                        )}
+                      </div>
+                      <div className='row'>
+                        <div className='col-md-6 my-4'>
+                          <Button
+                            variant='dark'
+                            type='submit'
+                            className='btn bg-hover-light  bg-orange rounded-0  px-4 py-2 me-2  border-0 shadow-sm'
+                            disabled={isLoading || showThankYou}
+                          >
+                            Submit
+                          </Button>
+                        </div>
+                        <div className='col-md-6 my-4 d-flex flex-row justify-content-end'>
+                          {isLoading && (
+                            <button
+                              class='btn text-dark-grey-500  bg-orange rounded-0 px-4 py-2 me-2  border-0 shadow-sm'
+                              type='button'
+                              disabled
+                            >
+                              <span
+                                class='spinner-border spinner-border-sm pr-4'
+                                role='status'
+                                aria-hidden='true'
+                              ></span>{' '}
+                              Submiting...
+                            </button>
+                          )}
+                        </div>
+                      </div>
                     </Form>
-                    {showAlert && (
-                      <Alert variant='success' className='mt-3'>
-                        Thank you for contacting us!
+                    {showThankYou && (
+                      <Alert variant='warning' className='text-center my-4'>
+                        <small className='fs-6'>
+                          Thank you for your feedback! We will review it
+                          shortly.
+                        </small>
                       </Alert>
                     )}
                   </Col>

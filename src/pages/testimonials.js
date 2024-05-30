@@ -16,60 +16,62 @@ const Testimonials = () => {
     const fetchTestimonials = async () => {
       const response = await fetch('/api/testimonials/get-all');
       const data = await response.json();
-      setTestimonials(data.testimonials);
+      setTestimonials(data.data.filter((testimonial) => testimonial.approved));
       setLoading(false);
     };
 
     fetchTestimonials();
   }, []);
 
-  //console.log(testimonials);
+  console.log(testimonials);
 
-  const testimonialItems = testimonials?.map((testimonial) => (
-    <div class='card my-4 testimonial border border-0 shadow-sm'>
-      <div class='card-header text-center bg-light bg-gradient'>
-        <h6 className='card-title'>
-          {' '}
-          {moment(testimonial.createdAt).format('MMMM Do, YYYY')}
-        </h6>
-      </div>
-      <div class='card-body d-flex justify-content-center align-items-center'>
-        <div className='row'>
-          <div className='col-md-4'>
-            <Image
-              className='img-fluid rounded-start'
-              width={600}
-              height={600}
-              placeholder='blur'
-              blurDataURL={blurDataUrl}
-              src={testimonial.image || '/aboutBanner.png'} // Replace with default image path
-              alt={testimonial.name + ' ' + testimonial.surname}
-              priority
-            />
-          </div>
-          <div className='col-md-8 text-left'>
-            <p className='card-text text-left lead fs-6'>
-              <q>
-                <i>{testimonial.comment}</i>
-              </q>
-            </p>
+  const testimonialItems = testimonials
+    ?.filter((testimonial) => testimonial.approved)
+    .map((testimonial) => (
+      <div class='card my-4 testimonial border border-0 shadow-sm'>
+        <div class='card-header text-center bg-light bg-gradient'>
+          <h6 className='card-title'>
+            {' '}
+            {moment(testimonial.createdAt).format('MMMM Do, YYYY')}
+          </h6>
+        </div>
+        <div class='card-body d-flex justify-content-center align-items-center'>
+          <div className='row'>
+            <div className='col-md-4'>
+              <Image
+                className='img-fluid rounded-start'
+                width={600}
+                height={600}
+                placeholder='blur'
+                blurDataURL={blurDataUrl}
+                src={testimonial.image || '/aboutBanner.png'} // Replace with default image path
+                alt={testimonial.name + ' ' + testimonial.surname}
+                priority
+              />
+            </div>
+            <div className='col-md-8 text-left'>
+              <p className='card-text text-left lead fs-6'>
+                <q>
+                  <i>{testimonial.comment}</i>
+                </q>
+              </p>
+            </div>
           </div>
         </div>
+        <div class='card-footer border border-0 text-muted text-center'>
+          <strong className='text-orange'>
+            {' '}
+            {testimonial.name} {testimonial.surname}
+          </strong>
+          <br />
+          <small>{testimonial.role}</small>
+          <br />{' '}
+          <strong>
+            <small>{testimonial.company}</small>
+          </strong>
+        </div>
       </div>
-      <div class='card-footer border border-0 text-muted text-center'>
-        <strong className='text-orange'>
-          {' '}
-          {testimonial.name} {testimonial.surname}
-        </strong>
-        <br />
-        <small>{testimonial.role}</small>
-        <br />{' '}
-        <strong>
-          <small>{testimonial.company}</small>
-        </strong>
-      </div>
-    </div>
-  ));
+    ));
 
   return (
     <Layout

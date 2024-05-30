@@ -1,18 +1,24 @@
 import clientPromise from '@/util/mongo';
+import { ObjectId } from 'mongodb';
+import { omit } from 'ramda';
 
 export default async function handler(req, res) {
   try {
-    if (req.method === 'GET') {
+    if (req.method === 'POST') {
       //console.log('req.method', req.method, 'req.query', req.query);
       const client = await clientPromise;
       const db = client.db(process.env.NEXT_PUBLIC_SELECTED_DB);
-      const collection = db.collection('testimonials');
-      const data = await collection
-        .find()
-        .sort({ createdAt: -1 })
-        .limit(10)
-        .toArray();
-      res.status(200).json({ data });
+      const collection = db.collection('messages');
+      let data = req.body;
+
+      console.log('data', data);
+      const result = await collection.deleteOne({
+        _id: new ObjectId(req.query.id),
+      });
+
+      res
+        .status(200)
+        .json({ message: 'callback updated successfully', data: result });
     } else {
       res.status(405).json({ message: 'Method not allowed' });
     }

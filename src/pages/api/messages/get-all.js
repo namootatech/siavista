@@ -6,12 +6,8 @@ export default async function handler(req, res) {
       //console.log('req.method', req.method, 'req.query', req.query);
       const client = await clientPromise;
       const db = client.db(process.env.NEXT_PUBLIC_SELECTED_DB);
-      const collection = db.collection('testimonials');
-      const data = await collection
-        .find()
-        .sort({ createdAt: -1 })
-        .limit(10)
-        .toArray();
+      const collection = db.collection('messages');
+      const data = await collection.find().sort({ createdAt: -1 }).toArray();
       res.status(200).json({ data });
     } else {
       res.status(405).json({ message: 'Method not allowed' });

@@ -63,6 +63,12 @@ const Footer = () => {
             >
               <p className='text-orange'>Leave us a comment</p>
             </Link>
+            <Link
+              href='/portal'
+              className='text-dark-grey text-decoration-none'
+            >
+              <p className='text-orange'>Webmaster Portal</p>
+            </Link>
           </Col>
         </Row>
         <Row className='justify-content-center mt-4 mb-4'>
