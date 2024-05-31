@@ -12,10 +12,19 @@ import axios from 'axios';
 export default function PortalPage() {
   const [passwordIncorrect, setPasswordIncorrect] = useState(true);
   const [password, setPassword] = useState('');
-  const evaulatePassword = () => {
+  const [showError, setShowError] = useState(false);
+
+  const error = showError ? (
+    <p className='text-danger'>Password is incorrect</p>
+  ) : null;
+  const evaulatePassword = (e) => {
+    e.preventDefault();
     axios.post('/api/password', { password }).then((res) => {
       console.log(res.data);
       setPasswordIncorrect(!res.data);
+      if (!res.data) {
+        setShowError(true);
+      }
     });
   };
 
@@ -28,7 +37,6 @@ export default function PortalPage() {
               <h2 className='text-orange  display-4 funky-text my-4'>
                 Webmaster Portal
               </h2>
-
               {passwordIncorrect && (
                 <form onSubmit={evaulatePassword}>
                   <div class='mb-3'>
@@ -46,6 +54,7 @@ export default function PortalPage() {
                   <button type='submit' class='btn btn-warning'>
                     Submit
                   </button>
+                  {error}
                 </form>
               )}
               {!passwordIncorrect && (

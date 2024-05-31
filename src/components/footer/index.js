@@ -53,7 +53,10 @@ const Footer = () => {
 
           <Col md={6} className='text-center text-md-end'>
             <p className='mb-0'>
-              Developed by <strong className='text-orange'>Namoota</strong>
+              Developed by{' '}
+              <a href='https://namoota.co.za' className='text-decoration-none'>
+                <strong className='text-orange'>Namoota</strong>
+              </a>
             </p>
           </Col>
           <Col md={6} className='text-center text-md-start mb-4 mb-md-0'>
