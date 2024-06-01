@@ -205,3 +205,9 @@
     margin-top: 5em;
   }
 }
+
+.gallery-category-heading {
+  background-color: var(--orange-color); 
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+}

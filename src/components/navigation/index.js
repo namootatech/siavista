@@ -84,7 +84,7 @@ const NavigationBar = () => {
                 ))}
               </NavDropdown>
               <Link
-                href='/galllery'
+                href='/gallery'
                 className='text-decoration-none navigation-link nav-link'
               >
                 Gallery
@@ -156,7 +156,7 @@ const NavigationBar = () => {
                 ))}
               </NavDropdown>
               <Link
-                href='/galllery'
+                href='/gallery'
                 className='text-decoration-none navigation-link nav-link'
               >
                 Gallery
