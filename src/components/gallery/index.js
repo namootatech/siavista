@@ -4,10 +4,10 @@ import { Carousel } from 'react-bootstrap';
 const categories = [
     'LOAD SHEDDING SOLUTIONS',
     'SEAMLESS HOME AUTOMATION',
-    'DESIGN & PLANNING',
-    '24/7 EMERGENCY RESPONSE',
-    'CERTIFIED ELECTRIC FENCE INSTALLATION',
-    'ADVANCED ACCESS CONTROL SYSTEMS',
+    // 'DESIGN & PLANNING',
+    // '24/7 EMERGENCY RESPONSE',
+    // 'CERTIFIED ELECTRIC FENCE INSTALLATION',
+    // 'ADVANCED ACCESS CONTROL SYSTEMS',
 ];
 
 const Gallery = ({ images }) => {

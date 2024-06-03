@@ -13,78 +13,78 @@ import { Row, Col, Container } from 'react-bootstrap';
 const GalleryPage = () => {
  
   const images = [
+    // {
+    //     imageUrl: 'service2.png',
+    //     category: '24/7 EMERGENCY RESPONSE',
+    // },
+    // {
+    //     imageUrl: 'electrician.jpg',
+    //     category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
+    // },
+    // {
+    //     imageUrl: 'service5.jpg',
+    //     category: 'ADVANCED ACCESS CONTROL SYSTEMS',
+    // },
     {
-        imageUrl: 'service2.png',
-        category: '24/7 EMERGENCY RESPONSE',
-    },
-    {
-        imageUrl: 'electrician.jpg',
-        category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
-    },
-    {
-        imageUrl: 'service5.jpg',
-        category: 'ADVANCED ACCESS CONTROL SYSTEMS',
-    },
-    {
-        imageUrl: 'service0.png',
+        imageUrl: 'gallery0.jpg',
         category: 'LOAD SHEDDING SOLUTIONS',
     },
     {
-        imageUrl: 'service6.jpg',
+        imageUrl: 'gallery4.jpg',
         category: 'SEAMLESS HOME AUTOMATION',
     },
+    // {
+    //     imageUrl: 'service3.png',
+    //     category: 'DESIGN & PLANNING',
+    // },
+    // {
+    //     imageUrl: 'service2.png',
+    //     category: '24/7 EMERGENCY RESPONSE',
+    // },
+    // {
+    //     imageUrl: 'electrician.jpg',
+    //     category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
+    // },
+    // {
+    //     imageUrl: 'service5.jpg',
+    //     category: 'ADVANCED ACCESS CONTROL SYSTEMS',
+    // },
     {
-        imageUrl: 'service3.png',
-        category: 'DESIGN & PLANNING',
-    },
-    {
-        imageUrl: 'service2.png',
-        category: '24/7 EMERGENCY RESPONSE',
-    },
-    {
-        imageUrl: 'electrician.jpg',
-        category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
-    },
-    {
-        imageUrl: 'service5.jpg',
-        category: 'ADVANCED ACCESS CONTROL SYSTEMS',
-    },
-    {
-        imageUrl: 'service0.png',
+        imageUrl: 'gallery2.jpg',
         category: 'LOAD SHEDDING SOLUTIONS',
     },
     {
-        imageUrl: 'service6.jpg',
+        imageUrl: 'gallery5.jpg',
         category: 'SEAMLESS HOME AUTOMATION',
     },
+    // {
+    //     imageUrl: 'service3.png',
+    //     category: 'DESIGN & PLANNING',
+    // },
+    // {
+    //     imageUrl: 'service2.png',
+    //     category: '24/7 EMERGENCY RESPONSE',
+    // },
+    // {
+    //     imageUrl: 'electrician.jpg',
+    //     category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
+    // },
+    // {
+    //     imageUrl: 'service5.jpg',
+    //     category: 'ADVANCED ACCESS CONTROL SYSTEMS',
+    // },
     {
-        imageUrl: 'service3.png',
-        category: 'DESIGN & PLANNING',
-    },
-    {
-        imageUrl: 'service2.png',
-        category: '24/7 EMERGENCY RESPONSE',
-    },
-    {
-        imageUrl: 'electrician.jpg',
-        category: 'CERTIFIED ELECTRIC FENCE INSTALLATION',
-    },
-    {
-        imageUrl: 'service5.jpg',
-        category: 'ADVANCED ACCESS CONTROL SYSTEMS',
-    },
-    {
-        imageUrl: 'service0.png',
+        imageUrl: 'gallery3.jpg',
         category: 'LOAD SHEDDING SOLUTIONS',
     },
     {
-        imageUrl: 'service6.jpg',
+        imageUrl: 'gallery6.jpg',
         category: 'SEAMLESS HOME AUTOMATION',
     },
-    {
-        imageUrl: 'service3.png',
-        category: 'DESIGN & PLANNING',
-    }
+    // {
+    //     imageUrl: 'service3.png',
+    //     category: 'DESIGN & PLANNING',
+    // }
   ];
 
   return (
