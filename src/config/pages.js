@@ -58,9 +58,9 @@ export default [
             'Your space will be not only well-lit but also visually stunning, reflecting your unique style.',
         },
         {
-          title: 'Energy Efficiency',
+          title: 'Superior Quality and Innovation',
           description:
-            'Your space will be not only well-lit but also visually stunning, reflecting your unique style.',
+            'By blending cutting-edge technology with our deep understanding of electrical systems, we offer innovative solutions that not only meet but exceed industry standards.',
         },
       ],
     },
