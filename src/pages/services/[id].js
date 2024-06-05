@@ -156,9 +156,12 @@ const LightingPage = ({ page }) => {
               >
                 <FaFacebook /> Facebook
               </Button>
-              {/* <Button className='border-0 bg-orange rounded-0 mx-2 mb-4'>
+              <Button 
+                className='border-0 bg-orange rounded-0 mx-2 mb-4'
+                href='/'
+              >
                 <FaLinkedin /> LinkedIn
-              </Button> */}
+              </Button>
             </div>
           </div>
         </Col>

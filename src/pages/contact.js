@@ -129,18 +129,23 @@ export default function Home() {
                 <Button
                   variant='light'
                   className='rounded-0  bg-orange me-2  mb-2'
+                  href='https://wa.me/27782468156'
+                  target='_blank'
                 >
                   <FaWhatsapp /> Chat on WhatsApp
                 </Button>
                 <Button
                   variant='light'
                   className='rounded-0  bg-orange mx-2 mb-2'
+                  href='https://web.facebook.com/profile.php?id=61560490621840'
+                  target='_blank'
                 >
                   <FaFacebook /> Facebook
                 </Button>
                 <Button
                   variant='light'
                   className='rounded-0  bg-orange mx-2 mb-2'
+                  href='/'
                 >
                   <FaLinkedin /> LinkedIn
                 </Button>
@@ -303,13 +308,27 @@ export default function Home() {
           </Col>
           <div className='d-md-none d-xs-block p-4 bg-grey'>
             <div className='d-flex justify-content-start flex-column flex-lg-row px-3'>
-              <Button variant='light' className='rounded-0 mr-2 mx-2 mb-4'>
+              <Button 
+                variant='light' 
+                className='rounded-0 mr-2 mx-2 mb-4'
+                href='https://wa.me/27782468156'
+                target='_blank'
+              >
                 <FaWhatsapp /> Chat on WhatsApp
               </Button>
-              <Button variant='light' className='rounded-0 mx-2 mb-4'>
+              <Button 
+                variant='light' 
+                className='rounded-0 mx-2 mb-4'
+                href='https://web.facebook.com/profile.php?id=61560490621840'
+                target='_blank'
+              >
                 <FaFacebook /> Facebook
               </Button>
-              <Button variant='light' className='rounded-0 mx-2 mb-4'>
+              <Button 
+                variant='light' 
+                className='rounded-0 mx-2 mb-4'
+                href='/'
+              >
                 <FaLinkedin /> LinkedIn
               </Button>
             </div>
