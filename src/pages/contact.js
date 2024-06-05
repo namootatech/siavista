@@ -96,7 +96,7 @@ export default function Home() {
                 <div id='hero-image'>
                   <img
                     className='img-fluid'
-                    src='/hero.png'
+                    src='/gallery0.jpg'
                     alt='Hero Image'
                     fluid
                   />
