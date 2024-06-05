@@ -144,15 +144,21 @@ const LightingPage = ({ page }) => {
               <Button
                 variant={'success'}
                 className='border-0 bg-orange rounded-0 mr-2 mx-2 mb-4'
+                href='https://wa.me/27782468156'
+                target='_blank'
               >
                 <FaWhatsapp /> Chat on WhatsApp
               </Button>
-              <Button className='border-0 bg-orange rounded-0 mx-2 mb-4'>
+              <Button 
+                className='border-0 bg-orange rounded-0 mx-2 mb-4'
+                href='https://web.facebook.com/profile.php?id=61560490621840'
+                target='_blank'
+              >
                 <FaFacebook /> Facebook
               </Button>
-              <Button className='border-0 bg-orange rounded-0 mx-2 mb-4'>
+              {/* <Button className='border-0 bg-orange rounded-0 mx-2 mb-4'>
                 <FaLinkedin /> LinkedIn
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Col>

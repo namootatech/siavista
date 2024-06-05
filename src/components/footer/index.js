@@ -77,7 +77,7 @@ const Footer = () => {
         <Row className='justify-content-center mt-4 mb-4'>
           <Col className='text-center'>
             <a
-              href='https://www.facebook.com/'
+              href='https://web.facebook.com/profile.php?id=61560490621840'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey me-3'
@@ -85,7 +85,7 @@ const Footer = () => {
               <i className='bi bi-facebook fs-4'></i>
             </a>
             <a
-              href='https://www.twitter.com/'
+              href='/'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey me-3'
@@ -93,7 +93,7 @@ const Footer = () => {
               <i className='bi bi-twitter fs-4'></i>
             </a>
             <a
-              href='https://www.instagram.com/'
+              href='/'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey me-3'
@@ -101,7 +101,7 @@ const Footer = () => {
               <i className='bi bi-instagram fs-4'></i>
             </a>
             <a
-              href='https://www.linkedin.com/'
+              href='/'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey'
