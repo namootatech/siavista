@@ -80,8 +80,7 @@ export default function Home() {
                   <p>
                     Our certified and experienced electricians will meticulously
                     install all electrical components, adhering to the highest
-                    safety standards and industry best practices. Click the
-                    button below to find out more.
+                    safety standards and industry best practices.
                   </p>
                 </>
               }
