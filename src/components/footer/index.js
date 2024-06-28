@@ -85,7 +85,7 @@ const Footer = () => {
               <i className='bi bi-facebook fs-4'></i>
             </a>
             <a
-              href='/'
+              href='https://x.com/siavista'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey me-3'
@@ -101,7 +101,7 @@ const Footer = () => {
               <i className='bi bi-instagram fs-4'></i>
             </a>
             <a
-              href='/'
+              href='https://www.linkedin.com/company/siavista-electrical/about/?viewAsMember=true'
               target='_blank'
               rel='noopener noreferrer'
               className='text-dark-grey'
