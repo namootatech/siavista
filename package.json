@@ -17,6 +17,7 @@
     "mongodb": "^6.6.1",
     "next": "14.2.1",
     "nextjs-progressbar": "^0.0.16",
+    "nodemailer": "^6.9.14",
     "ramda": "^0.30.0",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
