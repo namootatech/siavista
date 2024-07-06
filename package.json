@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "axios": "^1.6.8",
@@ -16,6 +17,7 @@
     "moment": "^2.30.1",
     "mongodb": "^6.6.1",
     "next": "14.2.1",
+    "next-sitemap": "^4.2.3",
     "nextjs-progressbar": "^0.0.16",
     "nodemailer": "^6.9.14",
     "ramda": "^0.30.0",
