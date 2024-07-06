@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'namoota.zar@gmail.com',
-  to: 'electricalsiavista@gmail.com',
+  to: 'info@siavistaelectrical.com',
   subject: 'New Website Call Me back',
 };
 
