@@ -65,7 +65,7 @@ export default function Home() {
           <div className='m-md-5'>
             <Hero
               title='Work with us'
-              image='/homeHeroImage.png'
+              image='/homeHero.jpg'
               subtitle={'Power up with our unmatched service!'}
               description={
                 <>
