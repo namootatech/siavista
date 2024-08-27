@@ -24,7 +24,7 @@ const Services = ({ services, columnSize }) => {
                     {service.title}
                   </Card.Title>
                   <Card.Img
-                    className='service-card-image rounded-0'
+                    className='rounded-0'
                     variant='top'
                     src={service.imageUrl}
                   />

@@ -368,7 +368,6 @@ body {
 }
 
 .service-card-image {
-  filter: saturate(0.5) contrast(1) sepia(0.5);
 }
 
 .project-in-mind {
