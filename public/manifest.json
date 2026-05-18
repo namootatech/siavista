@@ -1,0 +1,30 @@
+{
+  "name": "Siavista Electrical",
+  "short_name": "Siavista",
+  "description": "Siavista Electrical provides electrical contracting, access control, home automation, solar, and backup systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Contact Siavista Electrical"
+    },
+    {
+      "name": "About the developer",
+      "url": "/about-developer",
+      "description": "Learn about Ayabonga Qwabi"
+    }
+  ]
+}

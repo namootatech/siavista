@@ -2,8 +2,8 @@
 :root {
   --orange-color: #e17801;
   --grey-color: #555;
-  --merriweather-font: '__Merriweather_f68def', '__Merriweather_Fallback_f68def';
-  --poppins-font: '__Poppins_7df6af', '__Poppins_Fallback_7df6af';
+  --merriweather-font: 'Roboto', sans-serif;
+  --poppins-font: 'Roboto', sans-serif;
   --bs-breadcrumb-divider-color: #141413b0 !important;
   --main-light-bg: rgb(255, 255, 255);
   --dark-grey: #e8e8e8;

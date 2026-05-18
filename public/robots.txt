@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siavista.qwabi.co.za/sitemap.xml

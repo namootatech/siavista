@@ -111,6 +111,7 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
+      <p><a href="/about-developer">About the developer</a></p>
     </footer>
   );
 };
